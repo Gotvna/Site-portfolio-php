@@ -65,26 +65,25 @@
                                     <label for="email">Email</label>
                                 </div>
                             </div>
-
-                            <div class="row">
-                                <div class="col s12">
-                                    <div class="row">
-                                        <div class="col l1 m1 s1"></div>
-                                        <div class="input-field col l6 m6 s6">
-                                            <i class="material-icons prefix">mode_edit</i>
-                                            <textarea id="textarea2" class="white-text materialize-textarea"  data-length="250"></textarea>
-                                            <label for="textarea2">Textarea</label>
-                                        </div>
-                                    </div>
-                                 </div>
+                        </div>  
+                        <a class="waves-effect waves-light btn modal-trigger right black" href="#modal1">Sign-in</a>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <h4>THANKS YOU</h4>
+                                <p>Click here to return to the main page</p>
+                           </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
                             </div>
                         </div>
-                    </div>       
+                    </div>
+                </div>       
 
-                </div>
+        </div>
                 <div class="black modal-footer z-depth-5">
                     <a class="white-text modal-close waves-effect waves-green btn-flat modal-trigger">Submit</a>
                 </div>
+ 
         </div>
      
 </div>
