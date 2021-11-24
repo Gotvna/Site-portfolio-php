@@ -42,7 +42,7 @@
                                 <div class="col l1 m1 s1"></div>
                                 <div class="input-field col l3 m3 s3">
                                     <i class="material-icons prefix">chevron_right</i>
-                                    <input id="password" type="password" name="password" required>
+                                    <input id="password" type="password" class="white-text validate" name="password" required>
                                     <label for="password">Password</label>
                                 </div>
                                 <div class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
@@ -56,7 +56,7 @@
                                 <div class="col l1 m1 s1"></div>
                                 <div class="input-field col l3 m3 s3">
                                     <i class="material-icons prefix">chevron_right</i>
-                                    <input id="passwordCheck" type="password" name="password" required>
+                                    <input id="passwordCheck" type="password" class="white-text validate" name="password" required>
                                     <label for="passwordCheck">Re-enter Password</label>
                                 </div>
                                 <div class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
