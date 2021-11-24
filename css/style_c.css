@@ -1,0 +1,38 @@
+html{  
+    scroll-behavior: smooth;
+    background-color:#00CCCC;
+}
+
+h1{
+    font-family: 'Manrope', sans-serif;
+}
+
+a.brand-logo:hover { 
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color .3s;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+div.section{
+    background-color:#00CCCC;
+}   
+
+nav.nav-color {  
+    background-color:transparent ;
+}
+
+div .btn {
+    margin-top:  20px;  
+    background-color: #00CCCC;
+}
+.btn:hover {  
+    background-color: #00CCCC;
+    opacity: .6;
+}
+
+div .modal-close { 
+    border: 1px solid white; 
+}
