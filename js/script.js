@@ -417,9 +417,13 @@ endAudio:  'https://inventwithpython.com/pickup.wav'
 });
 
 
-$('#passphrase, #passphrasecheck').on('keyup', function () {
-  if ($('#passphrase').val() == $('#passphrasecheck').val()) {
-    $('#message').html('Matching').css('color', 'green');
-  } else 
-    $('#message').html('Not Matching').css('color', 'red');
-});
+var check = function() {
+  if (document.getElementById('passphrase').value ==
+    document.getElementById('passphrasecheck').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'not matching';
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="grey darken-2">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
 
     <!--First Modal Structure -->
 
-<div class="row box-sign-in">
+<div class="row box-sign-in center-align">
     <div class="col l2 m2 s2"></div>
         <div class="col s8 m8 l8">
                 <div class="black modal-content z-depth-5">
@@ -42,8 +42,8 @@
                                 <div class="col l1 m1 s1"></div>
                                 <div class="input-field col l3 m3 s3">
                                     <i class="material-icons prefix">chevron_right</i>
-                                    <input id="password" type="password" class="white-text validate" name="passphrase" required>
-                                    <label for="password">Password</label>
+                                    <input id="passphrase" type="password" class="white-text validate" name="passphrase" onkeyup='check();' required>
+                                    <label for="passphrase">Password</label>
                                 </div>
                                 <div class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
                                     <i class="material-icons prefix">face</i>
@@ -56,8 +56,8 @@
                                 <div class="col l1 m1 s1"></div>
                                 <div class="input-field col l3 m3 s3">
                                     <i class="material-icons prefix">chevron_right</i>
-                                    <input id="passwordCheck" type="password" class="white-text validate" name="passphrase" required>
-                                    <label for="passwordCheck">Re-enter Password</label>
+                                    <input id="passphrasecheck" type="password" class="white-text validate" name="passphrasecheck" onkeyup='check();' required>
+                                    <label for="passphrasecheck">Re-enter Password</label>
                                 </div>
                                 <div class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
                                     <i class="material-icons prefix">email</i>
@@ -65,8 +65,8 @@
                                     <label for="email">Email</label>
                                 </div>
                             </div>
+                            <a class="waves-effect waves-light btn modal-trigger right black btn-small" href="#modal1">Sign-in</a>
                         </div>  
-                        <a class="waves-effect waves-light btn modal-trigger right black" href="#modal1">Sign-in</a>
                         <div id="modal1" class="modal">
                             <div class="modal-content">
                                 <h4>THANKS YOU</h4>
