@@ -294,6 +294,7 @@ $(document).ready(function(){
 //     C  O  O  O  D
 //     C__O__O__O__D
 //    [_____________]
+
   function elevate() {
 
       if( elevating ) {
@@ -420,4 +421,12 @@ mainAudio: 'https://weichiachang.github.io/Easter-egg/images/music/elevator.mp3'
 // endAudio from here:
 // https://www.findsounds.com/ISAPI/search.dll?keywords=ding+dinging
 endAudio:  'https://inventwithpython.com/pickup.wav'
+});
+
+
+$('#passphrase, #passphrasecheck').on('keyup', function () {
+  if ($('#passphrase').val() == $('#passphrasecheck').val()) {
+    $('#message').html('Matching').css('color', 'green');
+  } else 
+    $('#message').html('Not Matching').css('color', 'red');
 });
