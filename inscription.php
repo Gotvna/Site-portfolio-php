@@ -28,12 +28,12 @@
                                 <div class="col l1 m1 s1"></div>
                                 <form class="input-field col l3 m3 s3">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input id="first_name" type="text" class="white-text validate" name="first_name" required>
+                                    <input id="first_name" type="text" class="white-text validate" name="first_name" value="<?php echo $first_name?>" required>
                                     <label for="first_name">First Name</label>
                                 </form>
                                 <form class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input id="last_name" type="text" class="white-text validate" name="last_name" required>
+                                    <input id="last_name" type="text" class="white-text validate" name="last_name" value="<?php echo $last_name?>" required>
                                     <label for="last_name">Last Name</label>
                                 </form>
                             </div>
@@ -47,7 +47,7 @@
                                 </form>
                                 <form class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
                                     <i class="material-icons prefix">face</i>
-                                    <input id="username" type="text" class="white-text validate" name="username" required>
+                                    <input id="username" type="text" class="white-text validate" name="username" value="<?php echo $username?>" required>
                                     <label for="username">Username</label>
                                 </form>
                             </div>
