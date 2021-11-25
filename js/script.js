@@ -2,10 +2,17 @@ $(document).ready(function(){
   $('.carousel').carousel({
    indicators :  true,
   });
+  
 });
 
 $(document).ready(function(){
   $('.parallax').parallax();
+});
+
+$(document).ready(function(){
+    $(".dropdown-trigger").dropdown({ 
+        hover : true,
+    });
 });
 
 
