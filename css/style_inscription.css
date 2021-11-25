@@ -1,12 +1,23 @@
 body{
     margin: 0;
+    background-color: rgba(0, 0, 0, 1);
 }
+
 h1{
     color: #fff;
 }
+<<<<<<< HEAD
 .box-sign-in{
     margin-top: 10%;
+=======
+div.box-sign-in{
+    margin-top: 100px;
+>>>>>>> c3858d65d1702c81e021bb4d279c76b8d20a5d72
 }
-.input-field .prefix{
+div.box-sign-in:hover{
+    background-color: rgba(0, 0, 0, .7  );
+    
+}
+div .input-field .prefix{
     color: white;
 }
