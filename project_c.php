@@ -19,7 +19,12 @@
     <div class="navbar-fixed">
         <nav class="nav-color">
             <div class="nav-wrapper">
-                <a href="index.php" class="brand-logo z-depth-2" >Main Page</a>
+                <a href="index.php" class="brand-logo z-depth-2" >Main Page</a>          
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="inscription.php">Sign-up</a></li>
+                    <li class="divider"></li>
+                    <li><a href="login.php">Log-in</a></li>
+                </ul>
                 <ul id="nav-mobile" class="right hide-on-med-and-down z-depth-1">
                     <li><a class="z-depth-1" href="#c">About C</a></li>
                     <li><a class="z-depth-1" href="#project">Our project</a></li>
