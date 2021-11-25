@@ -1,12 +1,18 @@
 body{
     margin: 0;
+    background-color: rgba(0, 0, 0, 1);
 }
+
 h1{
     color: #fff;
 }
-.box-sign-in{
+div.box-sign-in{
     margin-top: 100px;
 }
-.input-field .prefix{
+div.box-sign-in:hover{
+    background-color: rgba(0, 0, 0, .7  );
+    
+}
+div .input-field .prefix{
     color: white;
 }

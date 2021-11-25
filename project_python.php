@@ -19,9 +19,15 @@
     <nav class="transparent">
         <div class="nav-wrapper">
           <a href="index.php" class="brand-logo z-depth-2">Main Page</a>
+          <ul id="dropdown1" class="dropdown-content">
+              <li><a href="#!">Sign-in</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">Log-in</a></li>
+          </ul>
             <ul id="nav-mobile" class=" right hide-on-med-and-down">
                 <li><a class="z-depth-1" href="#python">About Python</a></li>
                 <li><a class="z-depth-1" href="#project">Our project</a></li>
+                <li><a class="z-depth-1 dropdown-trigger" href="#!dropdown1" data-target="dropdown1">Sign-in/up<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
         </div>
     </nav>

@@ -23,6 +23,7 @@
                 <ul id="nav-mobile" class="right hide-on-med-and-down z-depth-1">
                     <li><a class="z-depth-1" href="#c">About C</a></li>
                     <li><a class="z-depth-1" href="#project">Our project</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Sign-in/up<i class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>
             </div>
         </nav>
