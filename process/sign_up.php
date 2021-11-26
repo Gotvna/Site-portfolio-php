@@ -3,7 +3,7 @@ require_once 'config.php';
 
 $sql = "INSERT INTO normal_users (email, first_name, last_name, username ,password) VALUES(:email, :first_name, :last_name, :username, :password)";
 $dataBinded=array(
-    ':email'   =>$_POST['email'],
+    ':email' =>$_POST['email'],
     ':first_name'=>$_POST['first_name'],
     ':last_name'=>$_POST['last_name'],
     ':username'=>$_POST['username'],
@@ -29,7 +29,7 @@ if ($user){
 if (count($errors) == 0){
     $password = md5($password); //modifie encrypt !important
     
-    $query = "INSERT INTO users (first_name, last_name, username, email, password) VALUES('$first_name', '$last_name','$username','$email' '$password')";
+    $query = "INSERT INTO users (first_name, last_name, username, email, password) VALUES('$first_name', '$last_name','$username','$email', '$password')";
     mysqli_query($db, $query);
     $_SESSION['username'] = $username;
     $_SESSION['success'] = "You are now logged in";

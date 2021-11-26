@@ -26,9 +26,9 @@
                             <div class="col s12">
 
                                 <div class="row">
-                                    <div class="col l1 m1 s1"></div>
+                                    
                                     <form method="post" action="sign_up.php">
-                                    <div class="input-field col l3 m3 s3">
+                                    <div class="input-field col offset-l1 l3 m3 s3">
                                         <i class="material-icons prefix">account_circle</i>
                                         <input id="first_name" type="text" class="white-text validate" name="first_name"  required>
                                         <label for="first_name">First Name</label>
@@ -41,8 +41,8 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col l1 m1 s1"></div>
-                                    <div class="input-field col l3 m3 s3">
+                                    
+                                    <div class="input-field col offset-l1 l3 m3 s3">
                                         <i class="material-icons prefix">chevron_right</i>
                                         <input id="password" type="password" class="white-text validate" name="password" onkeyup='check();' required>
                                         <label for="password">Password</label>
@@ -55,27 +55,23 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col l1 m1 s1"></div>
-                                    <div class="input-field col l3 m3 s3">
-                                        <i class="material-icons prefix">chevron_right</i>
-                                        <input id="passwordcheck" type="password" class="white-text validate" name="passwordcheck" onkeyup='check();' required>
-                                        <label for="passwordcheck">Re-enter Password</label>
-                                    </div>
-                                    <div class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
+
+                                    <div class="input-field col l3 offset-l4 m3 offset-m4 s3 offset-s4">
                                         <i class="material-icons prefix">email</i>
                                         <input id="email" type="email" class="white-text validate" name="email" required>
                                         <label for="email">Email</label>
                                     </div>
                                 </div>
-                                <a  class="waves-effect waves-light btn modal-trigger right black btn-small" href="#modal1">Sign-up</a>
-                                <input type="submit" class="white-text waves-effect waves-light btn modal-trigger right black btn-small" href="#modal1" value="Register">
+                                <div class="row">
+                                <!-- <a  class="waves-effect waves-light btn modal-trigger right btn-small" href="#modal1">Sign-up</a> -->
+                                <input type="submit" class="waves-effect waves-light btn modal-trigger right white-text" href="#modal1" value="Register">
                             </div>  
-                            <div id="modal1" class="modal">
+                            <!-- <div id="modal1" class="modal">
                                 <div class="modal-content black">
                                     <h4 class="white-text">THANK YOU</h4>
                                     <p class="white-text">Click <a href="./index.php">here</a> to return to the main page</p>
                                </div>
-                        </div>
+                            </div> -->
                     </form>
                 </div>
             </div>
