@@ -36,8 +36,8 @@
                                 <label for="password">Password</label>
                             </div>
                         </div>
-                        <a  class="waves-effect waves-light btn modal-trigger right black btn-small" href="#modal1">Log-in</a>
-                        <input type="submit" class="white-text waves-effect waves-light btn modal-trigger right black btn-small" href="#modal1" value="Register">
+                        
+                        <input type="submit" class="white-text waves-effect waves-light btn modal-trigger right  btn-small" href="#modal1" value="Register">
                     </div>  
                     <!-- <div id="modal1" class="modal">
                         <div class="modal-content black">
