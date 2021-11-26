@@ -21,7 +21,7 @@
         <div class="col s8 m8 l8">
                 <div class="black modal-content z-depth-5">
                     <h1 class="center">Sign-up</h1>
-                    <form method="post" action="sign_up.php">
+                    <form method="post" action="./process/sign_up.php">
                         <div class="row">
                             <div class="col s12">
 
@@ -67,11 +67,12 @@
                                         <label for="email">Email</label>
                                     </div>
                                 </div>
-                                <a class="waves-effect waves-light btn modal-trigger right black btn-small" href="#modal1">Sign-up</a>
+                                <a  class="waves-effect waves-light btn modal-trigger right black btn-small" href="#modal1">Sign-up</a>
+                                <input type="submit" class="white-text waves-effect waves-light btn modal-trigger right black btn-small" href="#modal1" value="Register">
                             </div>  
                             <div id="modal1" class="modal">
                                 <div class="modal-content black">
-                                    <h4 class="white-text">THANKS YOU</h4>
+                                    <h4 class="white-text">THANK YOU</h4>
                                     <p class="white-text">Click <a href="./index.php">here</a> to return to the main page</p>
                                </div>
                         </div>
