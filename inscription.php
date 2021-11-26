@@ -21,60 +21,63 @@
         <div class="col s8 m8 l8">
                 <div class="black modal-content z-depth-5">
                     <h1 class="center">Sign-up</h1>
-                    <div class="row">
-                        <div class="col s12">
+                    <form method="post" action="sign_up.php">
+                        <div class="row">
+                            <div class="col s12">
 
-                            <div class="row">
-                                <div class="col l1 m1 s1"></div>
-                                <form class="input-field col l3 m3 s3">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="first_name" type="text" class="white-text validate" name="first_name" value="<?php echo $first_name?>" required>
-                                    <label for="first_name">First Name</label>
-                                </form>
-                                <form class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="last_name" type="text" class="white-text validate" name="last_name" value="<?php echo $last_name?>" required>
-                                    <label for="last_name">Last Name</label>
-                                </form>
-                            </div>
-                          
-                            <div class="row">
-                                <div class="col l1 m1 s1"></div>
-                                <form class="input-field col l3 m3 s3">
-                                    <i class="material-icons prefix">chevron_right</i>
-                                    <input id="password" type="password" class="white-text validate" name="password" onkeyup='check();' required>
-                                    <label for="password">Password</label>
-                                </form>
-                                <form class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
-                                    <i class="material-icons prefix">face</i>
-                                    <input id="username" type="text" class="white-text validate" name="username" value="<?php echo $username?>" required>
-                                    <label for="username">Username</label>
-                                </form>
-                            </div>
+                                <div class="row">
+                                    <div class="col l1 m1 s1"></div>
+                                    <form method="post" action="sign_up.php">
+                                    <div class="input-field col l3 m3 s3">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input id="first_name" type="text" class="white-text validate" name="first_name"  required>
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input id="last_name" type="text" class="white-text validate" name="last_name"  required>
+                                        <label for="last_name">Last Name</label>
+                                    </div>
+                                </div>
 
-                            <div class="row">
-                                <div class="col l1 m1 s1"></div>
-                                <form class="input-field col l3 m3 s3">
-                                    <i class="material-icons prefix">chevron_right</i>
-                                    <input id="passwordcheck" type="password" class="white-text validate" name="passwordcheck" onkeyup='check();' required>
-                                    <label for="passwordcheck">Re-enter Password</label>
-                                </form>
-                                <form class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
-                                    <i class="material-icons prefix">email</i>
-                                    <input id="email" type="email" class="white-text validate" name="email" required>
-                                    <label for="email">Email</label>
-                                </form>
-                            </div>
-                            <a class="waves-effect waves-light btn modal-trigger right black btn-small" href="#modal1">Sign-up</a>
-                        </div>  
-                        <div id="modal1" class="modal">
-                            <div class="modal-content black">
-                                <h4 class="white-text">THANKS YOU</h4>
-                                <p class="white-text">Click <a href="./index.php">here</a> to return to the main page</p>
-                           </div>
+                                <div class="row">
+                                    <div class="col l1 m1 s1"></div>
+                                    <div class="input-field col l3 m3 s3">
+                                        <i class="material-icons prefix">chevron_right</i>
+                                        <input id="password" type="password" class="white-text validate" name="password" onkeyup='check();' required>
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <div class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
+                                        <i class="material-icons prefix">face</i>
+                                        <input id="username" type="text" class="white-text validate" name="username"  required>
+                                        <label for="username">Username</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col l1 m1 s1"></div>
+                                    <div class="input-field col l3 m3 s3">
+                                        <i class="material-icons prefix">chevron_right</i>
+                                        <input id="passwordcheck" type="password" class="white-text validate" name="passwordcheck" onkeyup='check();' required>
+                                        <label for="passwordcheck">Re-enter Password</label>
+                                    </div>
+                                    <div class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
+                                        <i class="material-icons prefix">email</i>
+                                        <input id="email" type="email" class="white-text validate" name="email" required>
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <a class="waves-effect waves-light btn modal-trigger right black btn-small" href="#modal1">Sign-up</a>
+                            </div>  
+                            <div id="modal1" class="modal">
+                                <div class="modal-content black">
+                                    <h4 class="white-text">THANKS YOU</h4>
+                                    <p class="white-text">Click <a href="./index.php">here</a> to return to the main page</p>
+                               </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
+            </div>
         </div>
     </div> 
 </div>
