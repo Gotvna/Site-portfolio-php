@@ -22,7 +22,7 @@
           <ul id="dropdown1" class="dropdown-content">
               <li><a href="inscription.php">Sign-up</a></li>
               <li class="divider"></li>
-              <li><a href="login.php">Log-in</a></li>
+              <li><a href="login_page.php">Log-in</a></li>
           </ul>
             <ul id="nav-mobile" class=" right hide-on-med-and-down">
                 <li><a class="z-depth-1" href="#python">About Python</a></li>
