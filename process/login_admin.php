@@ -2,13 +2,7 @@
 
 
 
-try{
-    $bdd = new PDO("mysql:host=localhost;dbname=users", "root", "");
-}
-catch(PDOException $e){
-    die("Erreur : ".$e->getMessage());
-    
-}
+require_once 'config.php';
 
 if(isset($_POST["id"], $_POST["passphrase"])) 
     {     
