@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Member List</title>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="./css/materialize.css"  media="screen,projection"/>
-  <link rel="stylesheet" href="./css/style_admin.css">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+<?php
+require_once 'requires/head.php';
+?>
 </head>
 <body>
 <?php require_once './process/config.php'; ?>
@@ -47,6 +41,6 @@ foreach ($data as $user) { ?>
 </table>
 
 
-<?php require_once './requires/scripts.php'; ?>
+<?php require_once 'requires/scripts.php'; ?>
 </body>
 </html>

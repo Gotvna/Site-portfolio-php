@@ -53,16 +53,9 @@
             </div>
             
         </div>
-        <div class="row">
-            <div class="col l1 hide-on-small-only"></div>
-            <div class="col l3 m4 s12">
-                <img class="img-responsive " src="img/c/carouc1.png" alt="Connect4">
-            </div>
-            <div class="col l2 hide-on-small-only"></div>
-            <div class="col l4 m4 s12">
-                <img class="img-responsive " src="img/c/carouc2.png" alt="Connect4">
-            </div>
-            <div class="col l2 hide-on-small-only"></div>
+        <div class="row image">
+            <img class="col offset-l1 l5 m6 s12" src="img/c/carouc1.png" alt="Connect4">
+            <img class="col offset-l1 l4 m6 s12" src="img/c/carouc2.png" alt="Connect4">
         </div>
     </div> 
 
