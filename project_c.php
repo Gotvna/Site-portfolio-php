@@ -87,7 +87,7 @@
 
 
 <?php
-require 'footer.php';
+require_once 'requires/footer.php';
 ?>
 
   <script src="./js/jQuery.js"></script>

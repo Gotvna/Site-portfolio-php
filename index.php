@@ -13,18 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body>
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+<body>   
     <!-- Begin of first line -->
     <div class="head-title">
             <div class="nav-wrapper">
@@ -65,7 +54,7 @@
 
 
 <?php
-require 'footer.php';
+require_once 'requires/footer.php';
 ?>
         
   <script src="./js/jQuery.js"></script>

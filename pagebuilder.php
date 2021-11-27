@@ -13,7 +13,7 @@
 <body>
 
     <?php
-    require_once 'footer.php';
+    require_once 'requires/footer.php';
     ?>
     <script src="./js/jQuery.js"></script>
     <script src="./js/materialize.js"></script>
