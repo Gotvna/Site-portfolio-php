@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col offset-3">
+            <div class="col l4">
                 <form class="form-horizontal" id="Bpage" method="post" action="PageGen.php">
                     <h1>Build a new page</h1>
                     <div class="form-group">
@@ -57,6 +57,7 @@
 
             </div>
         </div>
+    </div>
     <script src="./js/jQuery.js"></script>
     <script src="./js/materialize.js"></script>
     <script src="./js/script.js"></script>
