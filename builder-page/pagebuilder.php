@@ -27,7 +27,7 @@
                         </select>
                     </div>  
                     <div class="form-group">
-                        <input type="text" name="inBkgF" class="form-control" placeholder="Parallax Image 1">
+                        <input type="file" accept="img/*" name="inBkgF" class="form-control" placeholder="Parallax Image 1">
                     </div>
                     <div class="form-group">
                         <input type="text" name="inHeadLine" class="form-control" placeholder="HeadLine">
@@ -36,13 +36,13 @@
                         <textarea name="inParaF" class="form-control" placeholder="Para 1"></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="inBkgS" class="form-control" placeholder="Parallax Image 2">
+                        <input type="file" accept="img/*" name="inBkgS" class="form-control" placeholder="Parallax Image 2">
                     </div>
                     <div class="form-group">
                         <textarea name="inParaS" class="form-control" placeholder="Para 2"></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="inBkgT" class="form-control" placeholder="Parallax Image 3">
+                        <input type="file" accept="img/*"name="inBkgT" class="form-control" placeholder="Parallax Image 3">
                     </div>
                     <div class="input-field col s12">
                         <select>
