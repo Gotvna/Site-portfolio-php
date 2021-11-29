@@ -17,7 +17,7 @@
     <!-- <div class="col l2 m2 s2"></div> -->
     <div class="col offset-l2 s8 m8 l8">
         <div class="black modal-content z-depth-5">
-            <h1 class="center">Log-in</h1>
+            <h1 class="center">PAGE ADMIN</h1>
             <form method="post" action="./process/login.php">
                 <div class="row">
                     <div class="col s12 l10 offset-l1">
