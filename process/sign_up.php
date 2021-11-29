@@ -1,7 +1,7 @@
 <?php
 require_once 'config.php';   
 
-$sql = "INSERT INTO normal_users (email, first_name, last_name, pseudo ,password) VALUES(:email, :first_name, :last_name, :username, :password)";
+$sql = "INSERT INTO users (email, first_name, last_name, pseudo ,password) VALUES(:email, :first_name, :last_name, :pseudo, :password)";
 $dataBinded=array(
     ':email' =>$_POST['email'],
     ':first_name'=>$_POST['first_name'],
@@ -19,7 +19,7 @@ header('Location:../index.php');//on le redirige sur la page d'accueil du site !
 //If the user already exist
 if ($user){
     if ($user['pseudo'] === $pseudo){
-        array_push($errors, "Pseudo already exists");
+        array_push($errors, "pseudo already exists");
     }
     if($user['email'] === $email){
         array_push($errors, "Email already exists");
@@ -29,11 +29,11 @@ if ($user){
 if (count($errors) == 0){
     $password = md5($password); //modifie encrypt !important
     
-    $query = "INSERT INTO users (first_name, last_name, pseudo, email, password) VALUES('$first_name', '$last_name','$username','$email', '$password')";
+    $query = "INSERT INTO users (first_name, last_name, pseudo, email, password) VALUES('$first_name', '$last_name','$pseudo','$email', '$password')";
     mysqli_query($db, $query);
     $_SESSION['pseudo'] = $pseudo;
     $_SESSION['success'] = "You are now logged in";
-    header('location: index.php');
+    header('Location: index.php');
 }
 
 
