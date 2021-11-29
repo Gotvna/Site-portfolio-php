@@ -45,7 +45,7 @@ require_once 'requires/head.php';
                         <td>$last_name</td>
                         <td>$pseudo</td>
                         <td>$password</td>
-                        <td><a href='edit_user.php'>Edit</a></td>
+                        <td><a href='process/edit_user.php?id=".$id."'>Edit</a></td>
                         <td><a href='process/delete_user.php?id=".$id."'>Delete</a></td>
                       </tr>";}
                 }
