@@ -2,7 +2,7 @@
 
 require_once 'config.php';
 
-if (isset($_POST["email"], $_POST["password"])) {     
+if (isset($_POST["email"]) && ($_POST["password"]) && ($_POST["password"]) ) {     
 
         $email = $_POST["email"]; 
         $password = $_POST["password"]; 

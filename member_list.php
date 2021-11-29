@@ -22,13 +22,13 @@ require_once 'requires/head.php';
 
 <h1>Liste des utilisateurs</h1>
 <?php
-$sql = "SELECT * FROM normal_users"; 
+$sql = "SELECT * FROM users"; 
 $pre = $pdo->prepare($sql); 
 $pre->execute();
 $data = $pre->fetchAll(PDO::FETCH_ASSOC);   
 foreach ($data as $user) { ?>
 <div class="bloc_user">
-    <?php echo "<tbody><tr><td>" . $user["email"]. "</td><td>" . $user["first_name"] . "</td><td>". $user["last_name"]. "</td><td>" . $user["username"]. "</td><td>" . $user["password"]. "</td></tr>"; ?>
+    <?php echo "<tbody><tr><td>" . $user["email"]. "</td><td>" . $user["first_name"] . "</td><td>". $user["last_name"]. "</td><td>" . $user["pseudo"]. "</td><td>" . $user["password"]. "</td></tr>"; ?>
     
 
         

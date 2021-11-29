@@ -2,7 +2,7 @@
 
 require_once 'config.php';
 
-if (isset($_POST["id"], $_POST["pseudo"], $_POST["passphrase"])) {     
+if (isset($_POST["id"]) && $_POST["pseudo"] && $_POST["passphrase"]) {     
 
         $id = $_POST["id"]; 
         $pseudo = $_POST["pseudo"];     
@@ -51,4 +51,4 @@ if (isset($_POST["id"], $_POST["pseudo"], $_POST["passphrase"])) {
 
 
 
-?>
+?>  
