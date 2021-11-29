@@ -6,11 +6,11 @@ require_once 'config.php';
      $query->execute();
 
      echo 'deleted user';
-     header("Location : ../member_list.php");
+     header("Location: ../member_list.php");
  }
  else{
-     echo'no id found';
-     header("Location : ../member_list.php");
+     echo 'no id found';
+     header("Location: ../member_list.php");
  }
 
 

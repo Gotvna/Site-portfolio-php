@@ -3,7 +3,7 @@ require_once 'config.php';
 
 $sql = "INSERT INTO users (admin, email, first_name, last_name, pseudo ,password) VALUES(:admin,:email, :first_name, :last_name, :pseudo, :password)";
 $dataBinded=array(
-    ':admin' =>0,
+    ':admin' => 0,
     ':email' =>$_POST['email'],
     ':first_name'=>$_POST['first_name'],
     ':last_name'=>$_POST['last_name'],
