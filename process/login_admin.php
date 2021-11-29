@@ -1,33 +1,54 @@
 <?php
 
-
-
 require_once 'config.php';
 
-if(isset($_POST["id"], $_POST["passphrase"])) 
-    {     
+if (isset($_POST["id"], $_POST["pseudo"], $_POST["passphrase"])) {     
 
         $id = $_POST["id"]; 
+        $pseudo = $_POST["pseudo"];     
         $passphrase = $_POST["passphrase"]; 
 
-        $id = stripslashes($_POST["name"]); 
-        $id = mysqli_real_escape_string($_POST["id"]);
+        // $email = stripslashes($_POST["email"]); 
+        // $email = ($_POST["email"]);
 
-        $passphrase = stripslashes($_POST["passphrase"]); 
-        $passphrase = mysqli_real_escape_string($_POST["passphrase"]); 
+        // $password = stripslashes($_POST["password"]); 
+        // $password = ($_POST["password"]); 
 
-        $bdd = $result1 -> query("SELECT id, passphrase FROM admin WHERE id = '".$id."' AND  password = '".$passphrase."'");
+        $sql = ("SELECT id, pseudo, passphrase FROM admin_users WHERE id LIKE '{$_POST["id"]}' AND pseudo LIKE '{$_POST["pseudo"]}' AND passphrase LIKE '{$_POST["passphrase"]}' ");
+        $pre = $pdo->prepare($sql); 
+        $pre->execute();
+        $user = current($pre->fetchAll(PDO::FETCH_ASSOC));//current prend la première ligne du tableau
 
-        if(mysqli_num_rows($result1) > 0 )
-        { 
-            $_SESSION["logged_in"] = true; 
-            $_SESSION["naam"] = $id; 
-        }
-        else
-        {
-            echo 'The id or passphrase are incorrect!';
-        }
+    if (empty($user)) {  //vérifie si le resultat est vide !
+         //non connecté
+         echo "Id or passphrase is incorrect !";
+    } else {
+         $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
+         header('Location:../index.php');
+         
+    }
+    //on le redirige sur la page d'accueil du site !
+
+
+        // if(mysqli_num_rows(mysqli_result::$current_field  $result1 ) == 2 )
+        //     { 
+        //     $_SESSION["logged_in"] = true; 
+        //     $_SESSION["name"] = $email; 
+        //     // header('Location:../index.php');
+        // }
+        // else
+        // {
+        //     echo 'The email or password are incorrect!';
+        //     // header('Location:../index.php');
+        // }
+
+        
+        
+        
+        
 }
+        
+
 
 
 ?>

@@ -19,8 +19,8 @@
     <!--First Modal Structure -->
 
     <div class="row box-sign-in center-align">
-        <div class="col l2 m2 s2"></div>
-        <div class="col s8 m8 l8">
+        
+        <div class="col offset-l2 s8 m8 l8">
             <div class="black modal-content z-depth-5">
                 <h1 class="center">Sign-up</h1>
                 <form method="post" action="./process/sign_up.php">
@@ -29,7 +29,6 @@
 
                             <div class="row">
 
-                                <form method="post" action="sign_up.php">
                                     <div class="input-field col offset-l1 l3 m3 s3">
                                         <i class="material-icons prefix">account_circle</i>
                                         <input id="first_name" type="text" class="white-text validate" name="first_name" required>
@@ -67,11 +66,11 @@
                             <div class="row">
                                 <input type="submit" class="waves-effect waves-light btn modal-trigger right white-text" href="#modal1" value="Register">
                             </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
-    </div>
-    </div>
     </div>
     <script src="./js/jQuery.js"></script>
     <script src="./js/materialize.js"></script>
