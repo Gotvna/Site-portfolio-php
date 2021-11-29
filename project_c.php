@@ -5,9 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>C Project</title>
-  <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="./css/materialize.css"  media="screen,projection"/>
   <link rel="stylesheet" href="./css/style_c.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
@@ -15,19 +13,9 @@
 
 <body>
 
-    <!--NavBar-->
-    <div class="navbar-fixed">
-        <nav class="nav-color">
-            <div class="nav-wrapper">
-                <a href="index.php" class="brand-logo z-depth-2" >Main Page</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down z-depth-1">
-                    <li><a class="z-depth-1" href="#c">About C</a></li>
-                    <li><a class="z-depth-1" href="#project">Our project</a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Sign-in/up<i class="material-icons right">arrow_drop_down</i></a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+<?php 
+    require_once 'requires/navbar.php';
+?>
  
 
   <div class="parallax-container">
@@ -65,16 +53,9 @@
             </div>
             
         </div>
-        <div class="row">
-            <div class="col l1 hide-on-small-only"></div>
-            <div class="col l3 m4 s12">
-                <img class="img-responsive " src="img/c/carouc1.png" alt="Connect4">
-            </div>
-            <div class="col l2 hide-on-small-only"></div>
-            <div class="col l4 m4 s12">
-                <img class="img-responsive " src="img/c/carouc2.png" alt="Connect4">
-            </div>
-            <div class="col l2 hide-on-small-only"></div>
+        <div class="row image">
+            <img class="col offset-l1 l5 m6 s12" src="img/c/carouc1.png" alt="Connect4">
+            <img class="col offset-l1 l4 m6 s12" src="img/c/carouc2.png" alt="Connect4">
         </div>
     </div> 
 
@@ -84,7 +65,7 @@
 
 
 <?php
-require 'footer.php';
+require_once 'requires/footer.php';
 ?>
 
   <script src="./js/jQuery.js"></script>

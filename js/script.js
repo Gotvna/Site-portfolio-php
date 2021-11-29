@@ -2,11 +2,11 @@ $(document).ready(function(){
   $('.carousel').carousel({
    indicators :  true,
   });
-  
 });
 
 $(document).ready(function(){
   $('.parallax').parallax();
+  $('select').formSelect();
 });
 
 $(document).ready(function(){

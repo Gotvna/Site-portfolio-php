@@ -8,30 +8,16 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="./css/materialize.css"  media="screen,projection"/>
   <link rel="stylesheet" href="./css/style_python.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  
-  <div class="navbar-fixed">
-    <nav class="transparent">
-        <div class="nav-wrapper">
-          <a href="index.php" class="brand-logo z-depth-2">Main Page</a>
-          <ul id="dropdown1" class="dropdown-content">
-              <li><a href="#!">Sign-in</a></li>
-              <li class="divider"></li>
-              <li><a href="#!">Log-in</a></li>
-          </ul>
-            <ul id="nav-mobile" class=" right hide-on-med-and-down">
-                <li><a class="z-depth-1" href="#python">About Python</a></li>
-                <li><a class="z-depth-1" href="#project">Our project</a></li>
-                <li><a class="z-depth-1 dropdown-trigger" href="#!dropdown1" data-target="dropdown1">Sign-in/up<i class="material-icons right">arrow_drop_down</i></a></li>
-            </ul>
-        </div>
-    </nav>
-  </div>  
+
+<?php 
+  require_once 'requires/navbar.php';
+?>
 
   <div class="parallax-container">
     <div class="parallax"><img src="./img/python/blog-async.jpeg" alt="Python"></div>
@@ -84,7 +70,7 @@
 
 
 <?php
-require 'footer.php';
+require_once 'requires/footer.php';
 ?>
   
   <script src="./js/jQuery.js"></script>

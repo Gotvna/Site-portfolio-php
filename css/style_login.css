@@ -17,3 +17,7 @@ div.box-sign-in:hover{
 div .input-field .prefix{
     color: white;
 }
+
+#modal1 {  
+    border: 1px solid white;
+}
