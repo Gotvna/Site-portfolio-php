@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col offset-3">
+            <div class="col l4">
                 <form class="form-horizontal" id="Bpage" method="post" action="PageGen.php">
                     <h1>Build a new page</h1>
                     <div class="form-group">
@@ -29,7 +29,7 @@
                         <label>Choose navbar presence</label>
                     </div> 
                     <div class="form-group">
-                        <input type="text" name="inBkgF" class="form-control" placeholder="Parallax Image 1">
+                        <input type="file" accept="img/*" name="inBkgF" class="form-control" placeholder="Parallax Image 1">
                     </div>
                     <div class="form-group">
                         <input placeholder="HeadLine" id="inHeadLine" type="text" class="validate">
@@ -40,14 +40,14 @@
                         <label for="textarea2">Textarea 1</label>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="inBkgS" class="form-control" placeholder="Parallax Image 2">
+                        <input type="file" accept="img/*" name="inBkgS" class="form-control" placeholder="Parallax Image 2">
                     </div>
                     <div class="input-field col s12">
                         <textarea id="textarea2" class="materialize-textarea"></textarea>
                         <label for="textarea2">Textarea 2</label>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="inBkgT" class="form-control" placeholder="Parallax Image 3">
+                        <input type="file" accept="img/*"name="inBkgT" class="form-control" placeholder="Parallax Image 3">
                     </div>
                     <div class="input-field col s12">
                         <select>
