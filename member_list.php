@@ -27,7 +27,9 @@ require_once 'requires/head.php';
                           <th>Last_name</th>
                           <th>Pseudo</th>
                           <th>Password</th>
-                          </tr>";
+                          </tr>
+                          </table>
+                          <table>";
 
                     while ($data = $query->fetch(PDO::FETCH_ASSOC)) {
                         $email = $data['email'];
@@ -38,15 +40,24 @@ require_once 'requires/head.php';
                         $password = $data['password'];
 
 
-               { echo "<tr>
-                        <td>$email</td>
-                        <td>$id</td>
-                        <td>$first_name</td>
-                        <td>$last_name</td>
-                        <td>$pseudo</td>
-                        <td>$password</td>
-                        <td><a href='process/edit_user.php?id=".$id."'>Edit</a></td>
-                        <td><a href='process/delete_user.php?id=".$id."'>Delete</a></td>
+               { echo "
+                     <tr>
+                      <td>
+                        <form action='process/edit_user.php' method='post'>
+                          <table>
+                          <tr>
+                              <td>$email</td>
+                              <td><input type='hidden' name='id' value='$id'>$id</td>
+                              <td><input type='text' name='first_name' value='$first_name'></td>
+                              <td><input type='text' name='last_name' value='$last_name'></td>
+                              <td><input type='text' name='pseudo' value='$pseudo'></td>
+                              <td>$password</td>
+                              <td><button type='submit'>Edit</button></td>
+                              <td><a href='process/delete_user.php?id=".$id."' class='delete_btn''>Delete</a></td>
+                            </tr>
+                          </table>
+                        </form>
+                      </td>
                       </tr>";}
                 }
                 ?> 
