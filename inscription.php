@@ -50,8 +50,8 @@
                                 </div>
                                 <div class="input-field col l3 offset-l3 m3 offset-m3 s3 offset-s3">
                                     <i class="material-icons prefix">face</i>
-                                    <input id="username" type="text" class="white-text validate" name="username" required>
-                                    <label for="username">Username</label>
+                                    <input id="pseudo" type="text" class="white-text validate" name="pseudo" required>
+                                    <label for="pseudo">Pseudo</label>
                                 </div>
                             </div>
 
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <input type="submit" class="waves-effect waves-light btn modal-trigger right white-text" href="#modal1" value="Register">
+                                <input type="submit" class="waves-effect waves-light btn modal-trigger right white-text"  value="Register">
                             </div>
                         </div>
                     </div>
