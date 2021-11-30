@@ -53,7 +53,7 @@ require_once 'requires/head.php';
                               <td><input type='text' name='pseudo' value='$pseudo'></td>
                               <td>$password</td>
                               <td><button type='submit' class='btn'>Edit</button></td>
-                              <td><button type='submit' class='btn'>Delete</button></td>
+                              <td><a href='process/delete_user.php'><button type='submit' class='btn'>Delete</button></a></td>
                             </tr>
                           </table>
                         </form>

@@ -119,7 +119,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        © 2021 <span><a style="color: rgba(255, 255, 255, 0.8);"  target="_blank" rel="nofollow" href="https://www.cultura.com/incitant-porno-9782368776834.php">Yaoi</a></span> Team
+        © 2021 <span><a style="color: rgba(255, 255, 255, 0.8);"  target="_blank" rel="nofollow" href="https://www.cultura.com/incitant-porno-9782368776834.html">Yaoi</a></span> Team
       </div>
     </div>
   </footer>
