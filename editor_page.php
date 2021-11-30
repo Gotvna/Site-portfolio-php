@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Builder</title>
+    <title>Editor page</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./css/materialize.css"  media="screen,projection"/>
     <link rel="stylesheet" href="./css/style_pagebuilder.css">
@@ -20,14 +20,7 @@
                         <input placeholder="Page Name" id="inPageName" type="text" class="validate">
                         <label for="inPageName">Page Name</label>
                     </div>
-                    <div class="input-field col s12">
-                        <select>
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="1">With</option>
-                            <option value="2">Without (Somes adminpages dont need navbar)</option>
-                        </select>
-                        <label>Choose navbar presence</label>
-                    </div> 
+
                     <div class="form-group">
                         <input type="file" accept="img/*" name="inBkgF" class="form-control" placeholder="Parallax Image 1">
                     </div>
@@ -49,14 +42,7 @@
                     <div class="form-group">
                         <input type="file" accept="img/*"name="inBkgT" class="form-control" placeholder="Parallax Image 3">
                     </div>
-                    <div class="input-field col s12">
-                        <select>
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="1">With</option>
-                            <option value="2">Without (Somes adminpages dont need navbar)</option>
-                            </select>
-                        <label>Choose footer presence</label>
-                    </div>
+
                     <button type="submit" class="btn btn-success">Submit It</button>
                 </form>
             </div>
