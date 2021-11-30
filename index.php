@@ -12,22 +12,23 @@
 </head>
 
 <body>   
-    <!-- Begin of first line -->
-    <!-- <div class="head-title">
-            <div class="nav-wrapper">
-                <h1 class="white-text brand-logo center">Portfolio</h1>
-            </div>
-    </div> -->
+<!-- Require the sidenav file-->
+<?php require_once './requires/sidenav.php'; ?>
+
     <nav>
+
+<!-- NAVBAR -->
         <div class="nav-wrapper">
             <h1 class=" brand-logo center">Portfolio</h1>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <ul id="nav-mobile" class="right">
                 <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Sign-in/up<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
-            <ul id="dropdown1" class="dropdown-content">
-                <li><a href="signin_up/inscription.php">Sign-up</a></li>
-                <li class="divider"></li>
-                <li><a href="signin_up/login_page.php">Log-in</a></li>
+            <ul id="dropdown1" class=" dropdown-content">
+                    <li><a href="./signin_up/inscription.php"><i class="material-icons">chevron_right</i>Sign-up</a></li>
+                    <li class="divider"></li>
+                    <li><a href="./signin_up/login_page.php"><i class="material-icons">chevron_right</i>Log-in</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" data-target="slide-out" class="sidenav-trigger">ACCOUNT</a></li>
             </ul>
         </div>
     </nav>

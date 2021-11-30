@@ -4478,7 +4478,7 @@ nav .input-field label.active i {
   nav.nav-extended .nav-wrapper {
     min-height: 64px;
   }
-  nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+  nav, nav .nav-wrapper {
     height: 64px;
     line-height: 64px;
   }

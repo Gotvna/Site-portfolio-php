@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         
-                        <input type="submit" class="white-text waves-effect waves-light btn modal-trigger right  btn-small" value="Register">
+                        <input type="submit" class="white-text waves-effect waves-light btn modal-trigger right  btn-small" value="Log-in">
                     </div>  
                     <!-- <div id="modal1" class="modal">
                         <div class="modal-content black">

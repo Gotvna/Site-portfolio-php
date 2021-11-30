@@ -9,6 +9,6 @@ session_unset();
 
 session_destroy();
 
-header("Location: inscription.php")
+header("Location: ../index.php")
 
 ?>
