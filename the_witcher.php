@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Witcher 3 : Wild Hunt</title>
+<title class="page-id">The Witcher 3 : Wild Hunt</title>
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
@@ -20,10 +20,10 @@
 ?>
 
   <div class="parallax-container">
-    <div class="parallax"><img src="./img/the_witcher/paral1_witcher.png" alt="The Witcher 3"></div>
+    <div class="parallax"><img src="./img/the_witcher/paral1_witcher.png" alt="The Witcher 3" name="backf"></div>
   </div>
 
-  <div class="section black">
+  <div class="section black" name="paraf">
     <div class="row container">
       <h1 class="header" id="project">The aim of the project</h1>
       <div class="row">
@@ -36,10 +36,10 @@
   </div>    
   
   <div class="parallax-container">
-    <div class="parallax"><img src="./img/the_witcher/paral2_witcher.png" alt="The Witcher 3"></div>
+    <div class="parallax"><img src="./img/the_witcher/paral2_witcher.png" alt="The Witcher 3" name="backs"></div>
   </div>
 
-  <div class="section black">
+  <div class="section black" name="paras">
     <div class="row container">
       <h2 class="header" id="witcher">About The Witcher III : Wild Hunt</h2>
       <div class="row">
@@ -53,8 +53,8 @@
     </div>
   </div> 
 
-<div class="parallax-container ">
-  <div class="parallax"><img src="./img/the_witcher/preview_site.png" alt="The Witcher 3"></div>
+<div class="parallax-container">
+  <div class="parallax"><img src="./img/the_witcher/preview_site.png" alt="The Witcher 3" name="backt"></div>
 </div>
   
 <hr>

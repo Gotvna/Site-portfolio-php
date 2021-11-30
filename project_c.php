@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C Project</title>
+  <title class="page-id">C Project</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="./css/materialize.css"  media="screen,projection"/>
   <link rel="stylesheet" href="./css/style_c.css">
@@ -20,10 +20,10 @@
  
 
   <div class="parallax-container">
-      <div class="parallax"><img src="./img/c/connect1.png" alt="Connect4"></div>
+      <div class="parallax"><img src="./img/c/connect1.png" alt="Connect4" name="backf"></div>
   </div>
 
-    <div class="section">
+    <div class="section" name="paraf">
         <div class="row container">
             <h1 class="header" id="c">About the C language</h1>
             <div class="row">
@@ -36,10 +36,10 @@
     </div>
 
     <div class="parallax-container">
-      <div class="parallax"><img src="./img/c/connect2.png" alt="Connect4"></div>
+      <div class="parallax"><img src="./img/c/connect2.png" alt="Connect4" name="backs"></div>
     </div>
 
-    <div class="section">
+    <div class="section" name="paras">
         <div class="row container">
             <h2 class="header" id="project">Our C Project</h2>
             <div class="row">
@@ -55,13 +55,13 @@
             
         </div>
         <div class="row image">
-            <img class="col offset-l1 l5 m6 s12" src="img/c/carouc1.png" alt="Connect4">
-            <img class="col offset-l1 l4 m6 s12" src="img/c/carouc2.png" alt="Connect4">
+            <img class="col offset-l1 l5 m6 s12" src="img/c/carouc1.png" alt="Connect4" name="imgbodyf">
+            <img class="col offset-l1 l4 m6 s12" src="img/c/carouc2.png" alt="Connect4" name="imgbodys">
         </div>
     </div> 
 
   <div class="parallax-container">
-    <div class="parallax"><img src="./img/c/connect3.png" alt="Connect4"></div>
+    <div class="parallax"><img src="./img/c/connect3.png" alt="Connect4" name="backt"></div>
   </div>
 
 
