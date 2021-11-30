@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Team</title>
+  <title name="title">The Team</title>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
@@ -28,14 +28,14 @@ require_once 'requires/sidenav.php';
 <div class="carousel carousel-slider center">
   <div class="carousel-item black-text" href="#one!">
     <div class="col s12 m7">
-      <h2 class="header">Nathanaël VOGT</h2>
+      <h2 class="header" name="h2">Student Developer</h2>
       <div class="card horizontal">
         <div class="card-image">
           <img class ="activator" src="./img/team/nath.png" alt="Programmers">
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h3>Student Developer</h3><br>
+            <h3>Nathanaël VOGT</h3><br>
             <p>I'm 21 years old. I'm a student in Gaming Campus in Lyon. I've learn osteopathie during 3 years before apply in Gaming Campus, I know somes tips about the body. I got an A scientific graduation.<br>
             I love video game and more precisely FPS games like rainbow six and adventure games like Assassin's Creed or The Long Dark.</p>
           
@@ -162,14 +162,14 @@ require_once 'requires/sidenav.php';
   
   <div class="carousel-item black-text" href="#two!">
     <div class="col s12 m7">
-      <h2 class="header">Valentin FAGUET</h2>
+      <h2 class="header" name="h2">Student Developer</h2>
       <div class="card horizontal">
         <div class="card-image">
           <img class ="activator" src="./img/team/val.png" alt="Programmers">
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h3>Student Developer</h3>
+            <h3>Valentin FAGUET</h3>
             <p>I'm 18 years old, studing in Gaming Campus in Lyon who lived in Orléans from his birth. I just passed my baccalaureat with the new reform, so I could take the new option NSI and have a good experience in coding.
               I love the culture of video games and I'm trying to build knowledges on.  <br>
             

@@ -11,43 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col l4">
-                <form class="form-horizontal" id="Bpage" method="post" action="PageGen.php">
-                    <h1>Build a new page</h1>
-                    <div class="form-group">
-                        <input placeholder="Page Name" id="inPageName" type="text" class="validate">
-                        <label for="inPageName">Page Name</label>
-                    </div>
 
-                    <div class="form-group">
-                        <input type="file" accept="img/*" name="inBkgF" class="form-control" placeholder="Parallax Image 1">
-                    </div>
-                    <div class="form-group">
-                        <input placeholder="HeadLine" id="inHeadLine" type="text" class="validate">
-                        <label for="inHeadLine">Head Line</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <textarea id="textarea2" class="materialize-textarea"></textarea>
-                        <label for="textarea2">Textarea 1</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="file" accept="img/*" name="inBkgS" class="form-control" placeholder="Parallax Image 2">
-                    </div>
-                    <div class="input-field col s12">
-                        <textarea id="textarea2" class="materialize-textarea"></textarea>
-                        <label for="textarea2">Textarea 2</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="file" accept="img/*"name="inBkgT" class="form-control" placeholder="Parallax Image 3">
-                    </div>
-
-                    <button type="submit" class="btn btn-success">Submit It</button>
-                </form>
-            </div>
-        </div>
-    </div>
+    
     <script src="./js/jQuery.js"></script>
     <script src="./js/materialize.js"></script>
     <script src="./js/script.js"></script>
