@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title class="page-id">Python Project</title>
+  <title name="title">Python Project</title>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
@@ -23,13 +23,13 @@
     <div class="parallax"><img src="./img/python/blog-async.jpeg" alt="Python" name="backf"></div>
   </div>
 
-    <div class="section blue darken-2" name="paraf">
+    <div class="section blue darken-2">
         <div class="row container">
-        <h1 class="header" id="python">About Python language</h1>
+        <h1 class="header" id="python" name="h1">About Python language</h1>
         <div class="row">
             <div class="col l1 hide-on-small-only"></div>
             <div class="col l11 m11 s12">
-                <p class="black-text text-darken-3 lighten-3">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Python is simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. It is one of the most used language, and had changed the way of coding for many programmers with his unique syntax.</p>
+                <p class="black-text text-darken-3 lighten-3" name="paraf">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Python is simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. It is one of the most used language, and had changed the way of coding for many programmers with his unique syntax.</p>
             </div>
         </div>
         </div>
@@ -39,12 +39,12 @@
     <div class="parallax"><img src="./img/python/stats_python.png" alt="Python" name="backs"></div>
   </div>
 
-    <div class="section blue darken-2" name="paras">
+    <div class="section blue darken-2">
         <div class="row container">
-            <h2 class="header" id="project">Our Python Project</h2>
+            <h2 class="header" id="project" name="h2">Our Python Project</h2>
             <div class="row">
                 <div class="col l1 hide-on-small-only"></div>
-                <div class="col l11 m11 s12">
+                <div class="col l11 m11 s12" name="paras">
                     <p class="black-text">Our first project was about python language and algorithm, the goal was to create a "The Price is Right" in a terminal, in order to train ourselves in algorithm. It was a funny project, not very hard, but the real purpose was to create some add-ons. <br>
                     The two images below are a shell with the game and the code in python.
                     </p>

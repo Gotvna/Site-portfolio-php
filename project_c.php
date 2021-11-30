@@ -23,13 +23,13 @@
       <div class="parallax"><img src="./img/c/connect1.png" alt="Connect4" name="backf"></div>
   </div>
 
-    <div class="section" name="paraf">
+    <div class="section">
         <div class="row container">
-            <h1 class="header" id="c">About the C language</h1>
+            <h1 class="header" id="c" name="h1">About the C language</h1>
             <div class="row">
                 <div class="col l1 hide-on-small-only"></div>
                 <div class="col l11 m11 s12">
-                    <p class="grey-text text-darken-3 lighten-3">C is a high-level and general-purpose programming language that is ideal for developing firmware or portable applications. Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the Unix Operating System in the early 1970s.</p>
+                    <p class="grey-text text-darken-3 lighten-3" name="paraf">C is a high-level and general-purpose programming language that is ideal for developing firmware or portable applications. Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the Unix Operating System in the early 1970s.</p>
                 </div>
             </div>    
         </div>
@@ -39,13 +39,13 @@
       <div class="parallax"><img src="./img/c/connect2.png" alt="Connect4" name="backs"></div>
     </div>
 
-    <div class="section" name="paras">
+    <div class="section">
         <div class="row container">
-            <h2 class="header" id="project">Our C Project</h2>
+            <h2 class="header" id="project" name="h2">Our C Project</h2>
             <div class="row">
                 <div class="col l1 hide-on-small-only"></div>
                 <div class="col l11 m11 s12">
-                    <p class="grey-text text-darken-3 lighten-3">After learning Git/Github and how works Debian WSL (linux environnement on Microsoft), the aim was to create a Connect-4 with some bonus, if it was possible to do them.<br>
+                    <p class="grey-text text-darken-3 lighten-3" name="paras">After learning Git/Github and how works Debian WSL (linux environnement on Microsoft), the aim was to create a Connect-4 with some bonus, if it was possible to do them.<br>
                     The bonus are a modifiable table to play on more columns and rows, the detection of the winner and a multiplayer like 6 players at the same time on the same board. This project was a bit hard to realise because understand how works Github was the first difficulty and after the configuration on Debian was even more <br>
                     But it was very enriching.</p>
                 </div>
