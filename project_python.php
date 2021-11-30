@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Python Project</title>
+  <title class="page-id">Python Project</title>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
@@ -20,10 +20,10 @@
 ?>
 
   <div class="parallax-container">
-    <div class="parallax"><img src="./img/python/blog-async.jpeg" alt="Python"></div>
+    <div class="parallax"><img src="./img/python/blog-async.jpeg" alt="Python" name="backf"></div>
   </div>
 
-    <div class="section blue darken-2">
+    <div class="section blue darken-2" name="paraf">
         <div class="row container">
         <h1 class="header" id="python">About Python language</h1>
         <div class="row">
@@ -36,10 +36,10 @@
     </div>    
 
   <div class="parallax-container">
-    <div class="parallax"><img src="./img/python/stats_python.png" alt="Python"></div>
+    <div class="parallax"><img src="./img/python/stats_python.png" alt="Python" name="backs"></div>
   </div>
 
-    <div class="section blue darken-2">
+    <div class="section blue darken-2" name="paras">
         <div class="row container">
             <h2 class="header" id="project">Our Python Project</h2>
             <div class="row">
@@ -52,17 +52,17 @@
             </div>
             <div class="row">
                 <div class="col m12 l6 s12 ">
-                    <img class="img-responsive z-depth-4" src="./img/python/python_code1.png" alt="Python">
+                    <img class="img-responsive z-depth-4" src="./img/python/python_code1.png" alt="Python" name="imgbodyf">
                 </div>
                 <div class="col m12 l6 s12 ">
-                    <img class="img-responsive z-depth-4" src="./img/python/python_code2.png" alt="Python">
+                    <img class="img-responsive z-depth-4" src="./img/python/python_code2.png" alt="Python" name="imgbodys">
                 </div>
             </div>
         </div> 
     </div>
 
   <div class="parallax-container">
-    <div class="parallax"><img src="./img/python/python_with_logo.png" alt="Python"></div>
+    <div class="parallax"><img src="./img/python/python_with_logo.png" alt="Python" name="backt"></div>
   </div>
     
 
