@@ -15,6 +15,7 @@
 
 <?php 
     require_once 'requires/navbar.php';
+    require_once 'requires/sidenav.php';
 ?>
  
 

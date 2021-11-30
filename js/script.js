@@ -1,18 +1,20 @@
-$(document).ready(function(){
-  $('.carousel').carousel({
-   indicators :  true,
-  });
-});
 
 $(document).ready(function(){
-  $('.parallax').parallax();
-});
-
-$(document).ready(function(){
+    $('.parallax').parallax();
+    $('.sidenav').sidenav({
+        edge : 'right',
+    });
+    $('input#input_text, textarea#textarea2').characterCounter();
+    $('.modal').modal();
     $(".dropdown-trigger").dropdown({ 
         hover : true,
     });
+    $('.carousel').carousel({
+        indicators :  true,
+    });
 });
+
+
 
 //Page Builder JS
 document.addEventListener('DOMContentLoaded', function() {
@@ -26,28 +28,9 @@ M.textareaAutoResize($('#textarea1'));
 $('#textarea2').val('New Text');
 M.textareaAutoResize($('#textarea2'));
 
-// Modal code
-  $(document).ready(function(){
-    $('.modal').modal();
-  });
 
-  $(document).ready(function() {
-    $('input#input_text, textarea#textarea2').characterCounter();
-  });
         
 
-
-
-//   $('#textarea1').val('New Text');
-//   M.textareaAutoResize($('#textarea1'));
-          
-
-
-//   $(".col").hover(function() {
-//     $(this).next('.redirect-button').fadeIn();
-//   }, function() {
-//     $(this).next('.redirect-button').fadeOut();
-//   });
 
 
 

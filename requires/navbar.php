@@ -9,9 +9,11 @@
                     <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Sign-in/up<i class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>
                 <ul id="dropdown1" class="dropdown-content">
-                    <li><a href="inscription.php">Sign-up</a></li>
+                    <li><a href="./signin_up/inscription.php"><i class="material-icons">chevron_right</i>Sign-up</a></li>
                     <li class="divider"></li>
-                    <li><a href="login_page.php">Log-in</a></li>
+                    <li><a href="./signin_up/login_page.php"><i class="material-icons">chevron_right</i>Log-in</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" data-target="slide-out" class="sidenav-trigger">ACCOUNT</a></li>
                 </ul>
             </div>
         </nav>

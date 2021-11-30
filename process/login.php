@@ -22,10 +22,10 @@ if (isset($_POST["email"]) && isset($_POST["password"]) ) {
     if (empty($user)) {  //vérifie si le resultat est vide !
          //non connecté
          echo "Email or password is incorrect !";
-        header('Location:../login_page.php');
+        header('Location:../signin_up/login_page.php');
     } else {
          $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
-        //  header('Location:../index.php');
+         header('Location:../index.php');
         if ($user['admin'] == 1 ) {  
             header('Location:../page_admin.php');
         }

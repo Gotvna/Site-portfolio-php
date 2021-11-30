@@ -8,63 +8,18 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="./css/materialize.css"  media="screen,projection"/>
-  <link rel="stylesheet" href="./css/style_login.css">
+  <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="../css/style_login.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- <div class="row"> -->
-        <!-- <div class="col offset-l11 l1 m1 s1"> -->
-            <a class="top right offset-l12 modal-button waves-effect waves-light btn modal-trigger" href="#modal1">Contact</a>
-        <!-- </div> -->
-    <!-- </div> -->
-
-<!-- Modal Structure -->
-<div id="modal1" class="black modal modal1 modal-fixed-footer">
-    <div class="black modal-content">
-        <h4 class="center white-text">Log-in Admin</h4>
-        <form method="post" action="./process/login_admin.php">
-            <div class="row">
-                <div class="col s12">
-                    
-                    <div class="row">
-                        <div class=" input-field col s6">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="id" type="text" class="white-text validate">
-                            <label for="id">ID</label>
-                        </div>
-                        
-                        <div class="input-field col s6">
-                            <input id="pseudo" type="text" class="white-text validate">
-                            <label for="pseudo">Pseudo</label>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">chevron_right</i>
-                            <input id="passphrase" type="password" class="white-text validate">
-                            <label for="passphrase">Passphrase</label>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <input type="submit" class="white-text waves-effect waves-light btn right  btn-small" value="Log-in">
-        </form>
-                
-        
-    </div>
-    <!-- <div class="black modal-footer">
-    </div> -->
-</div>
-
+ 
 <div class="row box-sign-in center-align">
     
     <div class="col offset-l2 s8 m8 l8">
         <div class="black modal-content z-depth-5">
             <h1 class="center">Log-in</h1>
-            <form method="post" action="./process/login.php">
+            <form method="post" action="../process/login.php">
                 <div class="row">
                     <div class="col s12 l10 offset-l1">
                         <div class="row">
@@ -96,9 +51,9 @@
     </div>
 </div>
 
-<script src="./js/jQuery.js"></script>
-<script src="./js/materialize.js"></script>
-<script src="./js/script.js"></script>
+<script src="../js/jQuery.js"></script>
+<script src="../js/materialize.js"></script>
+<script src="../js/script.js"></script>
     
 </body>
 </html>
