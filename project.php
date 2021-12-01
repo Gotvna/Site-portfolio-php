@@ -4,7 +4,8 @@
   require_once ('./process/config.php');
   ?>
   <?php
-      $sql = ("SELECT * FROM pages");
+      $pageid = $_GET['pageid'];
+      $sql = ("SELECT * FROM pages WHERE pageid = $pageid");
       $pre = $pdo->prepare($sql); 
       $pre->execute();
   
