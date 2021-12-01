@@ -1,5 +1,4 @@
 
-
 <footer class="page-footer">
     <div class="container">
       <div class="row">
@@ -64,13 +63,13 @@
                     <p class="black-text"><p>
                 </div>
                 <div class="black modal-footer">
-                    <a href="#modal2" class="white-text modal-close waves-effect waves-green btn-flat modal-trigger">Submit</a>
+                    <a class="white-text modal-close waves-effect waves-green btn-flat modal-trigger">Submit</a>
                 </div>
             </div>
 
    
 
-            <!--Second Modal Structure -->
+            <!-- Second Modal Structure
             <div id="modal2" class=" black modal modal2">
               <div class=" white-text modal-content">
                 <h4 class="center valign-wrapper">Thanks for your message !</h4>
@@ -79,7 +78,7 @@
               <div class="black white-text modal-footer">
                 <a href="#!" class=" white-text modal-close waves-effect waves-green btn-flat">Next</a>
               </div>
-            </div>
+            </div> -->
 
         </div>
         <div class="col l4 offset-l2 s12">
@@ -111,9 +110,44 @@
                       <li><a class="grey-text text-lighten-3" rel="nofollow" target="_blank" href="https://www.instagram.com/_natha_69_/?hl=fr">Instagram</a></li>
                   </ul>
               </div>
+            </div>
+            <?php
+              if (isset($_SESSION['user']) && isset($pageid)){
+                if($_SESSION['user']['admin'] == 1 ){
+                echo 
+                "<div class='col offset-l12'>
+                    <a class='modal-button waves-effect waves-light btn modal-trigger' href='#modal2'>Edit</a>
+                  <div id='modal2' class=' black modal modal2'>
+                    <div class=' white-text modal-content'>
+                      <h4 class='center valign-wrapper'>Edit Page</h4> 
 
-          </div>
-
+                        <form action='process/edit_page.php' method='post'>
+                          <tr>
+                              <td>$email</td>
+                              <td><input type='hidden' name='pageid' value='$pageid'>$pageid</td>
+                              <td><input type='text' name='title' value='$title'></td>
+                              <td><input type='text' name='backf' value='$backf'></td>
+                              <td><input type='text' name='h1' value='$h1'></td>
+                              <td><input type='text' name='paraf' value='$paraf'></td>
+                              <td><input type='text' name='backs' value='$backs'></td>
+                              <td><input type='text' name='h2' value='$h2'></td>
+                              <td><input type='text' name='paras' value='$paras'></td>
+                              <td><input type='text' name='imgbodyf' value='$imgbodyf'></td>
+                              <td><input type='text' name=imgbodys' value='$imgbodys'></td>
+                              <td><input type='text' name=backt' value='$backt'></td>
+                              <td><button type='submit' class='btn'>Edit</button></td>
+                              <td><a type='submit' class='btn'>Cancel</a></td>
+                            </tr>
+                        </form>
+                    </div>
+                    <div class='black white-text modal-footer'>
+                      <a href='#!' class=' white-text modal-close waves-effect waves-green btn-flat'>Edit</a>
+                    </div>
+                  </div>
+                </div>";
+                }
+              }
+            ?>
         </div>
       </div>
     </div>
