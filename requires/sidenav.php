@@ -7,7 +7,8 @@
             <img class="circle" src="img/logo_user.jpg"></img>
             
             <?php 
-            require_once 'session_start.php';
+            
+            // require_once 'session_start.php';
 
             if (isset($_SESSION['user'])) {
                 if ($_SESSION['user']['admin'] == 1) {

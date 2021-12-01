@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+<?php require_once '../process/config.php'; ?>
     <!--First Modal Structure -->
 
     <div class="row box-sign-in center-align">
