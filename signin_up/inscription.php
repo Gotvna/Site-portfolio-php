@@ -23,7 +23,7 @@
         <div class="col offset-l2 s8 m8 l8">
             <div class="black modal-content z-depth-5">
                 <h1 class="center">Sign-up</h1>
-                <form method="post" action="./process/sign_up.php">
+                <form method="post" action="../process/sign_up.php">
                     <div class="row">
                         <div class="col s12">
 

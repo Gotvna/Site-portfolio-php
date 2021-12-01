@@ -11,4 +11,5 @@
 
     $prepare = $pdo->prepare($sql);
     $prepare->execute($DataUpdate);
+    header('Location:../member_list.php')
 ?>
