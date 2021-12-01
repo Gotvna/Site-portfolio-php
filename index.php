@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php 
+    require_once './process/config.php';
+    require_once './process/getid_page.php';
+    ?>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +17,15 @@
 
 <body>   
 <!-- Require the sidenav file-->
-<?php require_once './requires/sidenav.php'; ?>
+<?php require_once './requires/sidenav.php'; 
+
+?>
 
     <nav>
 
 <!-- NAVBAR -->
         <div class="nav-wrapper">
-            <h1 class=" brand-logo center">Portfolio</h1>
+            <h1 class=" brand-logo center" name="h1">Portfolio</h1>
             <ul id="nav-mobile" class="right">
                 <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Sign-in/up<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
@@ -32,35 +38,26 @@
             </ul>
         </div>
     </nav>
+
+    <?php
+    $sql = ("SELECT * FROM pages");
+    $pre = $pdo->prepare($sql); 
+    $pre->execute();
+
+    $pages = $pre->fetchAll(PDO::FETCH_ASSOC);
+    ?>
     
     <div class="row no-padding no-margin ">
-        <div class=" responsive-img col l6 m6 s12 left-background1 hover-reduc-opacity valign-wrapper ">
+        
+        <?php
+        foreach($pages as $page){ 
+        ?>
+        <div style="background:url('<?php echo $page['background1'] ?>')" class=" responsive-img col l6 m6 s12 left-background1 hover-reduc-opacity valign-wrapper ">
             <div class="redirect-button text-center">
-                <a class="waves-effect waves-light btn-large" href="./the_witcher.php">The Witcher III</a>
-            </div>
-            
-        </div>
-        <div class=" responsive-img col l6 m6 s12  right-background2 hover-reduc-opacity valign-wrapper ">
-            <div class="redirect-button text-center">
-                <a class="waves-effect waves-light btn-large" href="./project_c.php">C Programming</a>
+                <a class="waves-effect waves-light btn-large" href="./project.php?pageid=<?php echo $page['pageid'] ?>"><?php echo $page['title'] ?></a>
             </div>
         </div>
-    </div>
-  
-<!-- End of first line -->
-    <div class="row no-padding no-margin">
-        <div class="responsive-img left-background3 col l6 m6 s12  hover-reduc-opacity valign-wrapper ">
-            <div class="redirect-button text-center">
-                <a class="bttn waves-effect waves-light btn-large" href="./project_python.php">Python Programming</a>
-            </div>
-        </div>
-
-       
-        <div class="responsive-img right-background4  col l6 m6 s12  hover-reduc-opacity valign-wrapper ">
-            <div class="redirect-button text-center">
-                <a class="bttn waves-effect waves-light btn-large" href="./team.php">About the Team</a>
-            </div>
-        </div>
+        <?php } ?>
     </div>
 
 
