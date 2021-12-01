@@ -1,7 +1,7 @@
 <?php
 
 require_once 'config.php';
-
+require_once '../requires/session_start.php';
 if (isset($_POST["email"]) && isset($_POST["password"]) ) {     
 
         $email = $_POST["email"]; 
