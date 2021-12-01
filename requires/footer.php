@@ -33,7 +33,7 @@
                               <label for="last_name">Last Name</label>
                             </div>
                           </div>
-                          
+                        <form>  
                           <div class="row">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">email</i>
@@ -43,12 +43,9 @@
                           </div>
 
                           <div class="row">
-
                             <div class="col s12">
                               <div class="row">
-
                                 <div class="input-field col s6">
-
                                     <i class="material-icons prefix">mode_edit</i>
                                     <textarea id="message" class="white-text materialize-textarea"  data-length="250"></textarea>
                                     <label for="message">Your message</label>
@@ -56,7 +53,7 @@
                               </div>
                             </div>
                           </div>
-                          
+                    </form>  
                         </div>
                       </div>
                             
