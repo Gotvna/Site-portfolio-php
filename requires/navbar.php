@@ -30,11 +30,11 @@
                 </ul>
 
                 <ul id="dropdown2" class="dropdown-content">
-                <li><a class="z-depth-1" href="project_c.php">C Project</a></li>
+                <li><a class="z-depth-1" href="../project.php?pageid=2">C Project</a></li>
                     <li class="divider"></li>
-                    <li><a class="z-depth-1" href="the_witcher.php">HTML Project</a></li>
+                    <li><a class="z-depth-1" href="../project.php?pageid=3">HTML Project</a></li>
                     <li class="divider"></li>
-                    <li><a class="z-depth-1" href="project_python.php">Python Project</a></li>
+                    <li><a class="z-depth-1" href="../project.php?pageid=4">Python Project</a></li>
                 </ul>
 
                 <ul id="dropdown3" class="dropdown-content">

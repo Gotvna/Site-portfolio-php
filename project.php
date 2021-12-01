@@ -30,7 +30,7 @@
 
   <div class="parallax-container">
       <div class="parallax">
-        <img src="<?php echo $page['backf']; ?>" alt="Connect4" name="backf">
+        <img src="<?php echo $page['backf']; ?>" alt="<?php echo $page['altimg']; ?>" name="backf">
       </div>
   </div>
 
@@ -48,7 +48,7 @@
 
     <div class="parallax-container">
       <div class="parallax">
-        <img src="<?php echo $page['backs']; ?>" alt="Connect4" name="backs">
+        <img src="<?php echo $page['backs']; ?>" alt="<?php echo $page['altimg']; ?>" name="backs">
         <?php echo $page['backs']; ?>
     </div>
     </div>
@@ -67,14 +67,14 @@
             
         </div>
         <div class="row image">
-            <img class="col offset-l1 l5 m6 s12" src="<?php echo $page['imgbodyf']; ?>" alt="Connect4" name="imgbodyf"> 
-            <img class="col offset-l1 l4 m6 s12" src="<?php echo $page['imgbodys']; ?>" alt="Connect4" name="imgbodys">
+            <img class="col offset-l1 l5 m6 s12" src="<?php echo $page['imgbodyf']; ?>" alt="<?php echo $page['altimg']; ?>" name="imgbodyf"> 
+            <img class="col offset-l1 l4 m6 s12" src="<?php echo $page['imgbodys']; ?>" alt="<?php echo $page['altimg']; ?>" name="imgbodys">
         </div>
     </div> 
 
   <div class="parallax-container">
     <div class="parallax">
-      <img src="<?php echo $page['backt']; ?>" alt="Connect4" name="backt">
+      <img src="<?php echo $page['backt']; ?>" alt="<?php echo $page['altimg']; ?>" name="backt">
   </div>
   </div>
 
