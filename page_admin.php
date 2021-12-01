@@ -12,40 +12,108 @@
   <link rel="stylesheet" href="./css/style_admin.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="color">
 
-<?php require_once './requires/sidenav.php'; ?>
+<?php 
+require_once './process/config.php';
+require_once './requires/sidenav.php'; 
+
+$sql = "SELECT COUNT(*) as number_users FROM `users` ORDER BY id";
+$prepare = $pdo->prepare($sql);
+$prepare->execute();
+$count = current($prepare->fetchAll(PDO::FETCH_ASSOC));
+$CountTotalUser = $count['number_users'];
+
+$sql2 = "SELECT COUNT(*) as number_admin FROM `users` WHERE admin LIKE 1 ORDER BY id";
+$prepare = $pdo->prepare($sql2);
+$prepare->execute();
+$count = current($prepare->fetchAll(PDO::FETCH_ASSOC));
+$CountAdminUser = $count['number_admin'];
+
+
+?>
+
+
+
+
+<?php 
+
+?>
 
 <div class="navbar-fixed">
-    <nav class="nav-color">
-        <div class="nav-wrapper">
-            <a href="index.php" class="brand-logo z-depth-2" >Main Page</a>          
-            <ul id="nav-mobile" class="right hide-on-med-and-down z-depth-1">
+        <nav class="nav-color">
+            <div class="nav-wrapper">
+                <a href="index.php" class="brand-logo z-depth-2" >Main Page</a>  
+                                      <!-- ON DESKTOP ONLY -->
+                <ul id="nav-mobile" class="right hide-on-med-and-down z-depth-1">
+                    <li><a class="z-depth-1" href="project_c.php">C Project</a></li>
+                    <li><a class="z-depth-1" href="the_witcher.php">HTML Project</a></li>
+                    <li><a class="z-depth-1" href="project_python.php">Python Project</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Sign-in/up<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="./signin_up/inscription.php"><i class="material-icons">chevron_right</i>Sign-up</a></li>
+                    <li class="divider"></li>
+                    <li><a href="./signin_up/login_page.php"><i class="material-icons">chevron_right</i>Log-in</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" data-target="slide-out" class="sidenav-trigger">ACCOUNT</a></li>
+                </ul>
+
+
+                <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ON MED AND BELOW !!!!!!!!!!!!!!!!!!!!!!!!-->
+
+                                                    <!-- PAGES -->
+                <ul id="nav-mobile" class="right hide-on-large-only show-on-med-and-down z-depth-1">
+                    <!-- <li><a class="z-depth-1" href="project_c.php">C Project</a></li>
+                    <li><a class="z-depth-1" href="the_witcher.php">HTML Project</a></li>
+                    <li><a class="z-depth-1" href="project_python.php">Python Project</a></li> -->
+                    <li><a class="dropdown-trigger z-depth-1" href="#!" data-target="dropdown2">Pages<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger z-depth-1" href="#!" data-target="dropdown3">Sign-in/up<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+
+                <ul id="dropdown2" class="dropdown-content">
                 <li><a class="z-depth-1" href="project_c.php">C Project</a></li>
-                <li><a class="z-depth-1" href="the_witcher.php">HTML Project</a></li>
-                <li><a class="z-depth-1" href="project_python.php">Python Project</a></li>
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Sign-in/up<i class="material-icons right">arrow_drop_down</i></a></li>
-            </ul>
-            <ul id="dropdown1" class="dropdown-content">
-                <li><a href="./signin_up/inscription.php"><i class="material-icons">chevron_right</i>Sign-up</a></li>
-                <li class="divider"></li>
-                <li><a href="./signin_up/login_page.php"><i class="material-icons">chevron_right</i>Log-in</a></li>
-                <li class="divider"></li>
-                <li><a href="#" data-target="slide-out" class="sidenav-trigger">ACCOUNT</a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
+                    <li class="divider"></li>
+                    <li><a class="z-depth-1" href="the_witcher.php">HTML Project</a></li>
+                    <li class="divider"></li>
+                    <li><a class="z-depth-1" href="project_python.php">Python Project</a></li>
+                </ul>
+
+                <ul id="dropdown3" class="dropdown-content">
+                    <li><a href="./signin_up/inscription.php"><i class="material-icons">chevron_right</i>Sign-up</a></li>
+                    <li class="divider"></li>
+                    <li><a href="./signin_up/login_page.php"><i class="material-icons">chevron_right</i>Log-in</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" data-target="slide-out" class="sidenav-trigger">ACCOUNT</a></li>
+                </ul>
+
+                
+            </div>
+        </nav>
+    </div>
 
 
-<div class="row background">
-    <div class="col l6 m6 s6 ">
+<div class="row">
+    <div class="col l12 m12 s12 center ">
         <h2>Go to member list</h2>
         <a class="waves-effect waves-light btn center white-text" href="member_list.php">Redirection</a>
     </div>
-    <div class="col l6 m6 s6 ">
-        <h2>Go to page editor page</h2>
-        <a class="waves-effect waves-light btn center white-text" href="editor_page.php">Redirection</a>        
+
+</div>
+
+<div class="row">
+    <div class="box box-1 col l2 offset-l1 m3 s3 ">
+        <h4 class='center'>
+            <?php 
+            echo $CountTotalUser .' users including '. $CountAdminUser. ' admin';
+            ?>
+         </h4>
+    </div>
+    <div class="box box-2 col l2 offset-l2 m3 s3 ">
+        <h3 class='center'>Test</h3>
+    </div>
+    <div class="box box-3 col l2 offset-l2 m3 s3 ">
+        <h3 class='center'>Test</h3>        
     </div>
 </div>
 
