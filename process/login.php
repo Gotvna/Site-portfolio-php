@@ -1,7 +1,6 @@
 <?php
 
 require_once 'config.php';
-session_start();
 if (isset($_POST["email"]) && isset($_POST["password"]) ) {     
 
         $email = $_POST["email"]; 
@@ -22,12 +21,18 @@ if (isset($_POST["email"]) && isset($_POST["password"]) ) {
     if (empty($user)) {  //vérifie si le resultat est vide !
          //non connecté
          echo "Email or password is incorrect !";
+          
         header('Location:../signin_up/login_page.php');
     } else {
-         $_SESSION['user'] = $user; //on enregistre que l'utilisateur est connecté
-         header('Location:../index.php');
-        if ($user['admin'] == 1 ) {  
+        $_SESSION['user'] = $user; 
+         //on enregistre que l'utilisateur est connecté
+        
+        header('Location:../index.php');
+
+        if ($user['admin'] == 1) {  
             header('Location:../page_admin.php');
+        } else {
+            echo "You're not allowed to go on this page.";
         }
     }      
 }
