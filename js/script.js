@@ -16,21 +16,6 @@ $(document).ready(function(){
 
 
 
-//Page Builder JS
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('select');
-  var instances = M.FormSelect.init(elems, options);
-});
-
-$('#textarea1').val('New Text');
-M.textareaAutoResize($('#textarea1'));
-
-$('#textarea2').val('New Text');
-M.textareaAutoResize($('#textarea2'));
-
-
-        
-
 
 
 

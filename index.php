@@ -58,6 +58,11 @@
             </div>
         </div>
         <?php } ?>
+        <div style="background:url('./img/index/team_code.png')" class=" responsive-img col l6 m6 s12 left-background1 hover-reduc-opacity valign-wrapper center center">
+            <div class="redirect-button text-center">
+                <a class="waves-effect waves-light btn-large" href="team.php">About The Team</a>
+            </div>
+        </div>
     </div>
 
 

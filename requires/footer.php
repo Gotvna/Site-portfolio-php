@@ -21,7 +21,7 @@
                     <div class="row">
                         <div class="col s12">
 
-                          <div class="row">
+                          <!-- <div class="row">
                             <div class=" input-field col s6">
                                 <i class="material-icons prefix">account_circle</i>
                                 <input id="first_name" type="text" class="white-text validate">
@@ -32,23 +32,53 @@
                               <input id="last_name" type="text" class="white-text validate">
                               <label for="last_name">Last Name</label>
                             </div>
-                          </div>
-                        <form>  
+                          </div> -->
+<?php 
+    $message_sent = false;
+    if(isset($_PÖST['email']) && $_POST['email'] != ''){
+
+    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+
+        $userEmail = $_POST['email'];
+        $messageSubject = $_POST['subject'];
+        $message = $_POST['message'];
+    
+        $to = "nvogt@gaming.tech";
+        $body = "";
+    
+        $body .= "From:".$userEmail. "/r/n";
+        $body .= "Message:".$message. "/r/n";
+        mail($to,$messageSubject,$body); 
+      
+        $message_sent = true;
+
+    }
+    else{
+        $invalid_class_name = "form-invalid";
+    }
+} 
+?>
+                        <form action="requires/footer.php" method="POST" class="form">  
                           <div class="row">
-                            <div class="input-field col s12">
+                            <div class="form-group col s6">
                                 <i class="material-icons prefix">email</i>
-                                <input id="email" type="email" class="white-text validate">
-                                <label for="email">Email</label>
+                                <label for="email" class="form-label">Email</label>
+                                <input <?php $invalid_class_name ?? "" ?> id="email" type="email" class="white-text validate form-control" placeholder ="Email" name="email" required>
+                            </div>
+                            <div class="form-group col s6">
+                                <i class="material-icons prefix">email</i>
+                                <label for="subject" class="form-label">Subject</label>
+                                <input id="subject" type="text" name="subject" class="white-text validate form-control" placeholder ="Subject" required>
                             </div>
                           </div>
 
                           <div class="row">
                             <div class="col s12">
                               <div class="row">
-                                <div class="input-field col s6">
+                                <div class="form-group col s6">
                                     <i class="material-icons prefix">mode_edit</i>
-                                    <textarea id="message" class="white-text materialize-textarea"  data-length="250"></textarea>
-                                    <label for="message">Your message</label>
+                                    <label for="message" class="form-label">Your message</label>
+                                    <input id="message" class="white-text materialize-textarea form-control" name="message" rows="5" cols="50" tabindex="4" data-length="250" placeholder="Insert Your Message" required></input>
                                 </div>
                               </div>
                             </div>
@@ -60,23 +90,11 @@
                     <p class="black-text"><p>
                 </div>
                 <div class="black modal-footer">
-                    <a class="white-text modal-close waves-effect waves-green btn-flat modal-trigger">Submit</a>
+                    <button class="white-text modal-close waves-effect waves-green btn-flat modal-trigger" onclick="M.toast({html:'Email Sent', classes :'rounded'})">Submit</button>
                 </div>
             </div>
 
    
-
-            <!-- Second Modal Structure
-            <div id="modal2" class=" black modal modal2">
-              <div class=" white-text modal-content">
-                <h4 class="center valign-wrapper">Thanks for your message !</h4>
-                
-              </div>
-              <div class="black white-text modal-footer">
-                <a href="#!" class=" white-text modal-close waves-effect waves-green btn-flat">Next</a>
-              </div>
-            </div> -->
-
         </div>
         <div class="col l4 offset-l2 s12">
             <div class="row">
