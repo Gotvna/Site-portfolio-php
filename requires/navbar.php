@@ -5,8 +5,8 @@
                                       <!-- ON DESKTOP ONLY -->
                 <ul id="nav-mobile" class="right hide-on-med-and-down z-depth-1">
                     <li><a class="z-depth-1" href="project.php?pageid=1">C Project</a></li>
-                    <li><a class="z-depth-1" href="project.php?pageid=2">HTML Project</a></li>
-                    <li><a class="z-depth-1" href="project.php?pageid=3">Python Project</a></li>
+                    <li><a class="z-depth-1" href="project.php?pageid=3">HTML Project</a></li>
+                    <li><a class="z-depth-1" href="project.php?pageid=2">Python Project</a></li>
                     <li><a class="z-depth-1" href="team.php">Team</a></li>
                     <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Sign-in/up<i class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>
@@ -31,11 +31,11 @@
                 </ul>
 
                 <ul id="dropdown2" class="dropdown-content">
-                <li><a class="z-depth-1" href="project.php?pageid=1">C Project</a></li>
+                <li><a class="z-depth-1" href="../project.php?pageid=1">C Project</a></li>
                     <li class="divider"></li>
-                    <li><a class="z-depth-1" href="project.php?pageid=2">HTML Project</a></li>
+                    <li><a class="z-depth-1" href="project.php?pageid=3">HTML Project</a></li>
                     <li class="divider"></li>
-                    <li><a class="z-depth-1" href="project.php?pageid=3">Python Project</a></li>
+                    <li><a class="z-depth-1" href="project.php?pageid=2">Python Project</a></li>
                     <li class="divider"></li>
                     <li><a class="z-depth-1" href="team.php">Team</a></li>
                 </ul>
