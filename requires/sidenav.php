@@ -7,12 +7,8 @@
             <img class="circle" src="img/logo_user.jpg"></img>
             
             <?php 
-<<<<<<< HEAD
             
-            // require_once 'session_start.php';
-=======
-            session_start();
->>>>>>> 6c60f54c39a78afa96a59bbc748c20f03e6fb0bf
+            ;
 
             if (isset($_SESSION['user'])) {
                 if ($_SESSION['user']['admin'] == 1) {
