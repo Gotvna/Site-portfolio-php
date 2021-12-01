@@ -4,7 +4,7 @@
 <li><div class='divider'></div></li>
     <li>
         <div class="user-view">
-            <a class="center" href="#user"><img class="circle" src="img/logo_user.jpg"></a>
+            <img class="circle" src="img/logo_user.jpg"></img>
             
             <?php 
             session_start();

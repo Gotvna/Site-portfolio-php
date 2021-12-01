@@ -44,7 +44,7 @@
                             <div class="row">
 
                                 <div class="input-field col offset-l1 l3 m3 s3">
-                                    <i class="material-icons prefix">chevron_right</i>
+                                    <i class="material-icons prefix">lock</i>
                                     <input id="password" type="password" class="white-text validate" name="password" onkeyup='check();' required>
                                     <label for="password">Password</label>
                                 </div>
