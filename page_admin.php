@@ -31,6 +31,12 @@ $count = current($prepare->fetchAll(PDO::FETCH_ASSOC));
 $CountAdminUser = $count['number_admin'];
 
 
+$sql = "SELECT COUNT(*) as number_pages FROM `pages` ORDER BY pageid";
+$prepare = $pdo->prepare($sql);
+$prepare->execute();
+$count = current($prepare->fetchAll(PDO::FETCH_ASSOC));
+$CountTotalPages = $count['number_pages'];
+
 ?>
 
 
@@ -49,6 +55,7 @@ $CountAdminUser = $count['number_admin'];
                     <li><a class="z-depth-1" href="project_c.php">C Project</a></li>
                     <li><a class="z-depth-1" href="the_witcher.php">HTML Project</a></li>
                     <li><a class="z-depth-1" href="project_python.php">Python Project</a></li>
+                    <li><a class="z-depth-1" href="team.php">Team</a></li>
                     <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Sign-in/up<i class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>
                 <ul id="dropdown1" class="dropdown-content">
@@ -77,6 +84,8 @@ $CountAdminUser = $count['number_admin'];
                     <li><a class="z-depth-1" href="the_witcher.php">HTML Project</a></li>
                     <li class="divider"></li>
                     <li><a class="z-depth-1" href="project_python.php">Python Project</a></li>
+                    <li class="divider"></li>
+                    <li><a class="z-depth-1" href="team.php">Team</a></li>
                 </ul>
 
                 <ul id="dropdown3" class="dropdown-content">
@@ -102,17 +111,21 @@ $CountAdminUser = $count['number_admin'];
 </div>
 
 <div class="row">
-    <div class="box box-1 col l2 offset-l1 m3 s3 ">
+    <div class="box box-1 col l2 offset-l1 m2 offset-m1 s2 offset-s1">
         <h4 class='center'>
             <?php 
             echo $CountTotalUser .' users including '. $CountAdminUser. ' admin';
             ?>
          </h4>
     </div>
-    <div class="box box-2 col l2 offset-l2 m3 s3 ">
-        <h3 class='center'>Test</h3>
+    <div class="box box-2 col l2 offset-l2 l2 offset-m2 s2 offset-s1">
+        <h4 class='center'>
+            <?php
+            echo $CountTotalPages .' pages in the website';
+            ?>
+        </h4>
     </div>
-    <div class="box box-3 col l2 offset-l2 m3 s3 ">
+    <div class="box box-3 col l2 offset-l2 m2 offset-m2 s2 offset-s1">
         <h3 class='center'>Test</h3>        
     </div>
 </div>
