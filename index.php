@@ -50,9 +50,9 @@
     <div class="row no-padding no-margin ">
         
         <?php
-        foreach($pages as $page){ 
+        foreach($pages AS $page){ 
         ?>
-        <div style="background:url('<?php echo $page['background1'] ?>')" class=" responsive-img col l6 m6 s12 left-background1 hover-reduc-opacity valign-wrapper ">
+        <div style="background:url('<?php echo $page['background'] ?>')" class=" responsive-img col l6 m6 s12 left-background1 hover-reduc-opacity valign-wrapper ">
             <div class="redirect-button text-center">
                 <a class="waves-effect waves-light btn-large" href="./project.php?pageid=<?php echo $page['pageid'] ?>"><?php echo $page['title'] ?></a>
             </div>
