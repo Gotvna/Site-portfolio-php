@@ -59,7 +59,7 @@ div .left-background3{
 }
 
 div .right-background4{
-    background-image: url(../img/main/team_code.png);
+    background-image: url(./img/index/team_code.png);
     background-size: cover;
     height: 50vh;
     background-repeat: no-repeat;
