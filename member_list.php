@@ -2,6 +2,7 @@
 
 
 require_once 'process/config.php';
+require_once 'requires/navbar.php';
 
 
 $user = $_SESSION['user'];
@@ -25,11 +26,11 @@ if ($user['admin'] == 1 ) {
       <title>Member_page</title>
     </head>
     <body>
-    <h1>Liste des utilisateurs</h1>
+    <h1 class='center'>List of the users</h1>
     <div class='container'>
             <table class='responsive-table'> 
                 <tbody>
-                    <table id='user' class='table table-bordered striped'>
+                    <table id='user' class='table responsive-table table-bordered striped'>
                         <tr>
                             <th>Email</th>
                             <th>Id</th>
@@ -63,7 +64,7 @@ if ($user['admin'] == 1 ) {
                         <tr>
                             <td>
                                 <form action='process/edit_user.php' method='post'>
-                                    <table>
+                                    <table> 
                                         <tr>
                                             <td>$email</td>
                                             <td><input type='hidden' name='id' value='$id'>$id</td>
@@ -71,8 +72,8 @@ if ($user['admin'] == 1 ) {
                                             <td><input type='text' name='last_name' value='$last_name'></td>
                                             <td><input type='text' name='pseudo' value='$pseudo'></td>
                                             <td>$password</td>
-                                            <td><button type='submit' class='btn'>Edit</button></td>
-                                            <td><a href='process/delete_user.php?id=".$id."' type='submit' class='btn'>Delete</a></td>
+                                            <td><button type='submit' class='btn'><i class='material-icons prefix'>create</i>Edit</button></td>
+                                            <td><a href='process/delete_user.php?id=".$id."' type='submit' class='btn red'><i class='material-icons prefix'>delete</i>Delete</a></td>
                                         </tr>
                                     </table>
                                 </form>

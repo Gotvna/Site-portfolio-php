@@ -1,7 +1,7 @@
 <?php
 require_once 'config.php';   
 
-$sql = "INSERT INTO users (admin, email, first_name, last_name, pseudo ,password) VALUES(:admin,:email, :first_name, :last_name, :pseudo, :password)";
+$sql = "INSERT INTO users (admin, email, first_name, last_name, pseudo ,password) VALUES(:admin, :email, :first_name, :last_name, :pseudo, :password)";
 $dataBinded=array(
     ':admin' => 0,
     ':email' =>$_POST['email'],

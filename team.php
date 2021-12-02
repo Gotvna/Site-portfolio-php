@@ -28,14 +28,14 @@ require_once 'requires/sidenav.php';
 <div class="carousel carousel-slider center">
   <div class="carousel-item black-text" href="#one!">
     <div class="col s12 m7">
-      <h2 class="header" name="h2">Student Developer</h2>
+      <h2 class="header" name="h2">Nathanaël VOGT</h2>
       <div class="card horizontal">
         <div class="card-image">
           <img class ="activator" src="./img/team/nath.png" alt="Programmers">
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h3>Nathanaël VOGT</h3><br>
+            <h3>Student Developper</h3><br>
             <p>I'm 21 years old. I'm a student in Gaming Campus in Lyon. I've learn osteopathie during 3 years before apply in Gaming Campus, I know somes tips about the body. I got an A scientific graduation.<br>
             I love video game and more precisely FPS games like rainbow six and adventure games like Assassin's Creed or The Long Dark.</p>
           
@@ -162,14 +162,14 @@ require_once 'requires/sidenav.php';
   
   <div class="carousel-item black-text" href="#two!">
     <div class="col s12 m7">
-      <h2 class="header" name="h2">Student Developer</h2>
+      <h2 class="header" name="h2">Valentin FAGUET</h2>
       <div class="card horizontal">
         <div class="card-image">
           <img class ="activator" src="./img/team/val.png" alt="Programmers">
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h3>Valentin FAGUET</h3>
+            <h3>Student Developper</h3>
             <p>I'm 18 years old, studing in Gaming Campus in Lyon who lived in Orléans from his birth. I just passed my baccalaureat with the new reform, so I could take the new option NSI and have a good experience in coding.
               I love the culture of video games and I'm trying to build knowledges on.  <br>
             
@@ -299,9 +299,103 @@ require_once 'requires/sidenav.php';
 
 
 
-<?php
-require_once 'requires/footer.php';
-?>
+<footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+
+          <h5 class="white-text">Contact Us</h5>
+          <p class="no-padding grey-text text-lighten-4">If you want to conctact us, please click on the button <span><a class="grey-text text-lighten-4"  target="_blank" rel="nofollow" href="elevator.php">below</a></span>.</p>
+
+
+
+
+
+           <!-- Modal Trigger -->
+            <a class="modal-button waves-effect waves-light btn modal-trigger" href="#modal1">Contact</a>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class=" modal modal1 modal-fixed-footer">
+                <div class="black modal-content">
+                    <h4>Contact Us</h4>
+                    <div class="row">
+                        <div class="col s12">
+<div class="row">
+                            <div class="form-group col s6">
+                                <i class="material-icons prefix">email</i>
+                                <label for="email" class="form-label">Email</label>
+                                <input <?php $invalid_class_name ?? "" ?> id="email" type="email" class="white-text validate form-control" placeholder ="Email" name="email" required>
+                            </div>
+                            <div class="form-group col s6">
+                                <i class="material-icons prefix">email</i>
+                                <label for="subject" class="form-label">Subject</label>
+                                <input id="subject" type="text" name="subject" class="white-text validate form-control" placeholder ="Subject" required>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col s12">
+                              <div class="row">
+                                <div class="form-group col s6">
+                                    <i class="material-icons prefix">mode_edit</i>
+                                    <label for="message" class="form-label">Your message</label>
+                                    <input id="message" class="white-text materialize-textarea form-control" name="message" rows="5" cols="50" tabindex="4" data-length="250" placeholder="Insert Your Message" required></input>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </form>  
+                        </div>
+                      </div>
+                            
+                    <p class="black-text"><p>
+                </div>
+                <div class="black modal-footer">
+                    <button class="white-text modal-close waves-effect waves-green btn-flat modal-trigger" onclick="M.toast({html:'Email Sent', classes :'rounded'})">Submit</button>
+                </div>
+            </div>
+
+   
+        </div>
+        <div class="col l4 offset-l2 s12">
+            <div class="row">
+                <div class="col l4 hide-on-med-and-down"></div>
+                <div class="col">
+                    <h5 class="white-text">Social Media</h5>
+                </div>
+                <div class="col l4"></div>
+            </div>
+          <div class="row">
+              <div class="col l4 offset-l2 s12">
+
+                  
+                  <h6 class="white-text">Valentin</h6>
+                  <ul>
+                      <li><a class="grey-text text-lighten-3" rel="nofollow" target="_blank" href="https://twitter.com/fgt_valentin">Twitter</a></li>
+                      <li><a class="grey-text text-lighten-3" rel="nofollow" target="_blank" href="https://www.linkedin.com/in/valentin-faguet-11b99b19b">Linkedin</a></li>
+                      <li><a class="grey-text text-lighten-3" rel="nofollow" target="_blank" href="https://www.instagram.com/val_fgt/">Instagram</a></li>
+                  </ul> 
+              </div> 
+              <div class="col l4 offset-l2 s12">
+
+                  
+                  <h6 class="white-text">Nathanaël</h6>
+                  <ul>
+                      <li><a class="grey-text text-lighten-3" rel="nofollow" target="_blank" href="https://twitter.com/Gotvna69">Twitter</a></li>
+                      <li><a class="grey-text text-lighten-3" rel="nofollow" target="_blank" href="https://www.linkedin.com/in/nathana%C3%ABl-vogt-54622620b/">Linkedin</a></li>
+                      <li><a class="grey-text text-lighten-3" rel="nofollow" target="_blank" href="https://www.instagram.com/_natha_69_/?hl=fr">Instagram</a></li>
+                  </ul>
+              </div>
+            </div>
+</div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 <span><a style="color: rgba(255, 255, 255, 0.8);"  target="_blank" rel="nofollow" href="https://www.cultura.com/incitant-porno-9782368776834.html">Yaoi</a></span> Team
+      </div>
+    </div>
+  </footer>
 
   <script src="./js/jQuery.js"></script>
   <script src="./js/materialize.js"></script>

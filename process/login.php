@@ -40,6 +40,6 @@ if (isset($_POST["email"]) && isset($_POST["password"]) ) {
 
 
 
-
+sha256()
 
 ?>

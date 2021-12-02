@@ -4,6 +4,7 @@
 require_once './process/config.php';
 
 
+
 $user = $_SESSION['user'];
 
 
@@ -32,21 +33,27 @@ if ($user['admin'] == 1 ) {
     <body class='color'>
     
     ";
-    $sql = "SELECT COUNT(*) as number_users FROM `users` ORDER BY id";
-    $prepare = $pdo->prepare($sql);
+    $users = "SELECT COUNT(*) as number_users FROM `users` ORDER BY id";
+    $prepare = $pdo->prepare($users);
     $prepare->execute();
     $count = current($prepare->fetchAll(PDO::FETCH_ASSOC));
     $CountTotalUser = $count['number_users'];
     
-    $sql2 = "SELECT COUNT(*) as number_admin FROM `users` WHERE admin LIKE 1 ORDER BY id";
-    $prepare = $pdo->prepare($sql2);
+    $admin = "SELECT COUNT(*) as number_admin FROM `users` WHERE admin LIKE 1 ORDER BY id";
+    $prepare = $pdo->prepare($admin);
     $prepare->execute();
     $count = current($prepare->fetchAll(PDO::FETCH_ASSOC));
     $CountAdminUser = $count['number_admin'];
+
+    $NonAdmin = "SELECT COUNT(*) as number_non_admin FROM `users` WHERE admin LIKE 0 ORDER BY id";
+    $prepare = $pdo->prepare($NonAdmin);
+    $prepare->execute();
+    $count = current($prepare->fetchAll(PDO::FETCH_ASSOC));
+    $CountNonAdminUser = $count['number_non_admin'];
     
     
-    $sql = "SELECT COUNT(*) as number_pages FROM `pages` ORDER BY pageid";
-    $prepare = $pdo->prepare($sql);
+    $rpoject_pages = "SELECT COUNT(*) as number_pages FROM `pages` ORDER BY pageid";
+    $prepare = $pdo->prepare($rpoject_pages);
     $prepare->execute();
     $count = current($prepare->fetchAll(PDO::FETCH_ASSOC));
     $CountTotalPages = $count['number_pages'];
@@ -109,31 +116,60 @@ if ($user['admin'] == 1 ) {
 
 
 <div class='row'>
-    <div class='col l12 m12 s12 center '>
+    <div class='col l6 m6 s6 center '>
         <h2>Go to member list</h2>
         <a class='waves-effect waves-light btn center white-text' href='member_list.php'>Redirection</a>
+    </div>
+    <div class='col l6 m6 s6 center '>
+        <h2>Go to the page builder</h2>
+        <a class='waves-effect waves-light btn center white-text' href='pagebuilder.php'>Redirection</a>
     </div>
 
 </div>
 
-<div class='row'>
-    <div class='box box-1 col l2 offset-l1 m2 offset-m1 s2 offset-s1'>
-        <h4 class='center'>"
-             
-            .$CountTotalUser .' users including '. $CountAdminUser. ' admin'.
-            "
+<div class='row' style='padding-top:150px;'>
+    <div class='container box box-1 col l2 offset-l2 m4 offset-m2 s4 offset-s2'>
+        <h4 class='center'>
+        <table class='centered responsive-table'>
+            <thead>
+                <tr>
+                    <th>Total users</th>
+                    <th>Normal users</th>
+                    <th>Admins</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>$CountTotalUser</td>
+                    <td>$CountNonAdminUser</td>
+                    <td>$CountAdminUser</td>
+               
+            </tbody>
+        </table>
+           
          </h4>
     </div>
-    <div class='box box-2 col l2 offset-l2 l2 offset-m2 s2 offset-s1'>
-        <h4 class='center'>"
-            
-             .$CountTotalPages .' pages in the website'.
-            "
+    <div class='container box box-2 col l2 offset-l4 l2 m4 offset-m2 s4 offset-s2'>
+        <h4 class='center'>
+            <table class='centered responsive-table'>
+            <thead>
+                <tr>
+                    <th>Project pages</th>
+                    
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>$CountTotalPages</td>
+                
+
+        </tbody>
+    </table>
         </h4>
     </div>
-    <div class='box box-3 col l2 offset-l2 m2 offset-m2 s2 offset-s1'>
-        <h3 class='center'>Test</h3>        
-    </div>
+    
 </div>
 
 <script src='./js/jQuery.js'></script>
