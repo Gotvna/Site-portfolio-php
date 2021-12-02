@@ -1,0 +1,15 @@
+
+html {
+    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+}
+::placeholder {
+    color: purple;
+    opacity: .7;
+}
+
+input {
+    margin-left: 15px;
+}
+div.padd {
+    padding-top: 45px;
+}

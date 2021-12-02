@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
- 
+<?php require_once '../process/config.php'; ?>
 <div class="row box-sign-in center-align">
     
     <div class="col offset-l2 s8 m8 l8">

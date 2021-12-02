@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php
-  require_once ('./process/config.php');
+  require_once './process/config.php';
   ?>
   <?php
       $pageid = $_GET['pageid'];
