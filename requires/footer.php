@@ -149,22 +149,29 @@
                           
                             <tr style='border: 1px solid white;'>
                               
-                              <td><input class='white-text' type='hidden' name='pageid' value='$pageid'><h4 class'red-text'>Page $pageid</h4></td>
-                              <td><h5>Title</h5><input class='white-text' type='text' name='title' value='".$page['title']."'></td>
-                              <td><h5>Background parallax 1</h5><input class='white-text' type='text' name='backf' value=".$page['backf']."></td>
-                              <td><h5>H1</h5><input class='white-text' type='text' name='h1' value='".$page['h1']."'></td>
-                              <td><h5>First paragraph</h5><input class='white-text' type='text' name='paraf' value='".$page['paraf']."'></td>
-                              <td><h5>Background parallax 2</h5><input class='white-text' type='text' name='backs' value='".$page['backs']."'></td>
-                              <td><h5>H2</h5><input class='white-text' type='text' name='h2' value='".$page['h2']."'></td>
-                              <td><h5>Second paragraph</h5><input class='white-text' type='text' name='paras' value='".$page['paras']."'></td>
-                              <td><h5>Img 1</h5><input class='white-text' type='text' name='imgbodyf' value='".$page['imgbodyf']."'></td>
-                              <td><h5>Img 2</h5><input class='white-text' type='text' name='imgbodys' value='".$page['imgbodys']."'></td>
-                              <td><h5>Background parallax 3</h5><input class='white-text' type='text' name='backt' value='".$page['backt']."'></td>
-                              <td><h5>Background for Index.php</h5><input class='white-text' type='text' name='background' value='".$page['background']."'></td>
-                              <td><button type='submit' class='btn'>Edit</button></td>
-                              
+                                <td><input class='white-text' type='hidden' name='pageid' value='$pageid'><h4 class'red-text'>Page $pageid</h4></td>
+                                <td><h5>Title</h5><input class='white-text' type='text' name='title' value='".$page['title']."'></td>
+                                <td><h5>Background parallax 1</h5><input class='white-text' type='text' name='backf' value=".$page['backf']."></td>
+                                <td><h5>H1</h5><input class='white-text' type='text' name='h1' value='".$page['h1']."'></td>
+                                <td><h5>First paragraph</h5><input class='white-text' type='text' name='paraf' value='".$page['paraf']."'></td>
+                                <td><h5>Background parallax 2</h5><input class='white-text' type='text' name='backs' value='".$page['backs']."'></td>
+                                <td><h5>H2</h5><input class='white-text' type='text' name='h2' value='".$page['h2']."'></td>
+                                <td><h5>Second paragraph</h5><input class='white-text' type='text' name='paras' value='".$page['paras']."'></td>
+                                <td><h5>Img 1</h5><input class='white-text' type='text' name='imgbodyf' value='".$page['imgbodyf']."'></td>
+                                <td><h5>Img 2</h5><input class='white-text' type='text' name='imgbodys' value='".$page['imgbodys']."'></td>
+                                <td><h5>Background parallax 3</h5><input class='white-text' type='text' name='backt' value='".$page['backt']."'></td>
+                                <td><h5>Background for Index.php</h5><input class='white-text' type='text' name='background' value='".$page['background']."'></td>
+                                    <div class='padd row'>
+                                        <div class='col'>
+                                            <button type='submit' class='btn'>Edit</button>
+                                        </div>
+                                    </div>
                             </tr>
                         </form>
+                        <div class='col'>
+                        <h3 class='red-text'><i class='material-icons prefix'>warning</i>DANGER ZONE<i class='material-icons prefix'>warning</i></h3>
+                        <a href='process/delete_page.php?pageid=".$pageid."' type='submit' class='btn red'>Delete</a>
+                        </div>
                     </div>
                     <div class='black white-text modal-footer'>
                       <a href='#!' class=' white-text modal-close waves-effect waves-green btn-flat'>VALIDATE</a>
