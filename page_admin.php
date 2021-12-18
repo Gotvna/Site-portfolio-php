@@ -1,5 +1,5 @@
 
-<?php 
+<?php
 
 require_once './process/config.php';
 
@@ -10,9 +10,9 @@ $user = $_SESSION['user'];
 
 
 
-if ($user['admin'] == 1 ) {
+if ($user['admin'] == 1) {
     include_once './requires/sidenav.php';
-    
+
     echo "
     
     
@@ -38,7 +38,7 @@ if ($user['admin'] == 1 ) {
     $prepare->execute();
     $count = current($prepare->fetchAll(PDO::FETCH_ASSOC));
     $CountTotalUser = $count['number_users'];
-    
+
     $admin = "SELECT COUNT(*) as number_admin FROM `users` WHERE admin LIKE 1 ORDER BY id";
     $prepare = $pdo->prepare($admin);
     $prepare->execute();
@@ -50,8 +50,8 @@ if ($user['admin'] == 1 ) {
     $prepare->execute();
     $count = current($prepare->fetchAll(PDO::FETCH_ASSOC));
     $CountNonAdminUser = $count['number_non_admin'];
-    
-    
+
+
     $rpoject_pages = "SELECT COUNT(*) as number_pages FROM `pages` ORDER BY pageid";
     $prepare = $pdo->prepare($rpoject_pages);
     $prepare->execute();
@@ -65,9 +65,9 @@ if ($user['admin'] == 1 ) {
                 <a href='index.php' class='brand-logo z-depth-2' >Main Page</a>  
                                       <!-- ON DESKTOP ONLY -->
                 <ul id='nav-mobile' class='right hide-on-med-and-down z-depth-1'>
-                    <li><a class='z-depth-1' href='../project.php?pageid=1'>C Project</a></li>
-                    <li><a class='z-depth-1' href='../project.php?pageid=2'>HTML Project</a></li>
-                    <li><a class='z-depth-1' href='../project.php?pageid=3'>Python Project</a></li>
+                    <li><a class='z-depth-1' href='project.php?pageid=1'>C Project</a></li>
+                    <li><a class='z-depth-1' href='project.php?pageid=2'>HTML Project</a></li>
+                    <li><a class='z-depth-1' href='project.php?pageid=3'>Python Project</a></li>
                     <li><a class='z-depth-1' href='team.php'>Team</a></li>
                     <li><a class='dropdown-trigger' href='#!' data-target='dropdown1'>Sign-in/up<i class='material-icons right'>arrow_drop_down</i></a></li>
                 </ul>
@@ -182,8 +182,7 @@ if ($user['admin'] == 1 ) {
 
 </body>
 </html>
-"
-    ;
+";
 }
 
 

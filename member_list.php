@@ -40,7 +40,8 @@ if ($user['admin'] == 1 ) {
                             <th>Password</th>
                         </tr>
                     </table>
-                    </div>";
+                    </div>
+        ";
     
     $query = $pdo->prepare('SELECT * FROM users ORDER BY id asc');
     $query->execute();
